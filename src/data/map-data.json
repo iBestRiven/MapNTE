@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "map": {
+    "width": 5120,
+    "height": 5120,
+    "tileSize": 256,
+    "mapLocatorSourceWidth": 11264,
+    "mapLocatorSourceHeight": 11264,
+    "coordinateSystem": "game-affine-v1"
+  },
+  "categories": [],
+  "locations": [],
+  "routes": []
+}
