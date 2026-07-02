@@ -46,7 +46,7 @@ const SOURCES = [
     file: 'cleaned_quest_fixed_map_icon.json',
     idPrefix: 'quest',
     categoryId: 'quest',
-    group: '任务',
+    group: '探索',
     label: '任务',
     iconUrl: '/icons/sidequest.png',
     color: '#7ec7ff',

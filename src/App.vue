@@ -1045,10 +1045,6 @@ onBeforeUnmount(() => {
       <p class="eyebrow">{{ selectedLocation.district }}</p>
       <h2>{{ selectedLocation.name }}</h2>
       <p v-if="selectedLocation.description" class="detail-description">{{ selectedLocation.description }}</p>
-      <div class="tag-row">
-        <span v-for="type in getVisibleTypes(selectedLocation)" :key="type">{{ categoryLookup[type]?.label || type }}</span>
-        <span v-for="tag in selectedLocation.tags" :key="tag"># {{ tag }}</span>
-      </div>
       <button class="coordinate-row" type="button" @click="copyCoordinates">
         <span>游戏坐标</span><code>{{ selectedLocation.x.toFixed(3) }}, {{ selectedLocation.y.toFixed(3) }}</code><small>复制</small>
       </button>
@@ -1088,6 +1084,14 @@ onBeforeUnmount(() => {
         <div class="sidebar-heading"><h2>{{ editingLocationId ? '编辑点位' : '新建点位' }}</h2><button type="button" class="close-button" @click="editorFormOpen = false">×</button></div>
         <label>点位 ID<input v-model.trim="locationForm.locationId" :disabled="!!editingLocationId" placeholder="留空自动生成 local ID" /></label>
         <label>名称<input v-model="locationForm.name" required /></label>
+        <fieldset>
+          <legend>点位图标</legend>
+          <div class="form-grid form-grid--icon">
+            <label>文本图标<input v-model="locationForm.icon" maxlength="4" placeholder="如 P、CF、★" /></label>
+            <label>图片路径<input v-model="locationForm.iconUrl" placeholder="/icons/example.png" /></label>
+            <label>标记颜色<input v-model="locationForm.color" placeholder="#5b8def，留空使用分类色" /></label>
+          </div>
+        </fieldset>
         <label>区域<select v-model="locationForm.district">
           <option v-for="district in districtOptions" :key="district" :value="district">{{ district }}</option>
         </select></label>
@@ -1107,6 +1111,9 @@ onBeforeUnmount(() => {
               <option v-for="group in editorCategoryGroups" :key="group" :value="group">{{ group }}</option>
             </select></label>
             <label>或新建大类<input v-model="locationForm.customTypeNewGroup" placeholder="新建大类（可选）" @keydown.enter.prevent="addCustomType" /></label>
+            <label>分类文本图标<input v-model="locationForm.customTypeIcon" maxlength="4" placeholder="默认 ·" @keydown.enter.prevent="addCustomType" /></label>
+            <label>分类图片路径<input v-model="locationForm.customTypeIconUrl" placeholder="/icons/example.png" @keydown.enter.prevent="addCustomType" /></label>
+            <label>分类颜色<input v-model="locationForm.customTypeColor" type="color" /></label>
           </div>
           <button type="button" :disabled="!locationForm.customTypeId.trim() || !locationForm.customTypeText.trim() || (!locationForm.customTypeGroup && !locationForm.customTypeNewGroup.trim())" @click="addCustomType">+ 添加类型</button>
         </div></fieldset>

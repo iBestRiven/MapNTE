@@ -623,12 +623,18 @@ export function useMapApp() {
     district: '全地图',
     x: 0,
     y: 0,
+    icon: '',
+    iconUrl: '',
+    color: '',
     description: '',
     tagsText: '',
     customTypeId: '',
     customTypeText: '',
     customTypeGroup: '',
     customTypeNewGroup: '',
+    customTypeIcon: '',
+    customTypeIconUrl: '',
+    customTypeColor: '#87a9ff',
     pendingCustomTypes: [],
     images: [],
   })
@@ -1027,8 +1033,8 @@ export function useMapApp() {
       showStatus('保存失败：文本包含乱码字符 U+FFFD')
       return
     }
-    if (staticChanges) queueLocationChanges(staticChanges)
     if (!isLocalEditor) {
+      if (staticChanges) queueLocationChanges(staticChanges)
       if (staticChanges) exportLocationChanges(staticChanges)
       return
     }
@@ -1039,6 +1045,11 @@ export function useMapApp() {
         body: JSON.stringify(mapData.value),
       })
       if (!response.ok) throw new Error('保存失败')
+      pendingLocationChanges.value = {
+        categories: [],
+        upsertLocations: [],
+        deletedLocationIds: [],
+      }
       showStatus('本地数据已保存')
     } catch {
       showStatus('本地数据保存失败')
@@ -1052,13 +1063,23 @@ export function useMapApp() {
     return categoryLookup.value[activeType || visibleTypes[0]]
   }
 
+  function getMarkerVisual(location) {
+    const category = getPrimaryCategory(location)
+    return {
+      ...category,
+      icon: location?.icon || category?.icon,
+      iconUrl: location?.iconUrl || category?.iconUrl,
+      color: location?.color || category?.color,
+    }
+  }
+
   function categoryIconHtml(category) {
     const src = category?.iconUrl || (category?.icon?.startsWith('/') ? category.icon : null)
     return src ? `<img src="${publicAssetUrl(src)}" alt="" />` : category?.icon || '·'
   }
 
   function markerHtml(location) {
-    const category = getPrimaryCategory(location)
+    const category = getMarkerVisual(location)
     const completed = completedIds.value.has(location.id)
     const selected = selectedLocation.value?.id === location.id
     const extraCount = Math.max(getVisibleTypes(location).length - 1, 0)
@@ -2222,6 +2243,9 @@ export function useMapApp() {
       ...emptyLocationForm(),
       ...clone(location),
       locationId: location.id,
+      icon: location.icon || '',
+      iconUrl: location.iconUrl || '',
+      color: location.color || '',
       district: districtOptions.value.includes(normalizeDistrictLabel(location.district))
         ? normalizeDistrictLabel(location.district)
         : '全地图',
@@ -2246,8 +2270,9 @@ export function useMapApp() {
       id,
       group,
       label,
-      icon: '·',
-      color: '#87a9ff',
+      icon: String(locationForm.value.customTypeIcon || '').trim() || '·',
+      ...(String(locationForm.value.customTypeIconUrl || '').trim() ? { iconUrl: String(locationForm.value.customTypeIconUrl || '').trim() } : {}),
+      color: locationForm.value.customTypeColor || '#87a9ff',
       isDefault: false,
     }
     locationForm.value.pendingCustomTypes.push(category)
@@ -2256,12 +2281,19 @@ export function useMapApp() {
     locationForm.value.customTypeText = ''
     locationForm.value.customTypeGroup = group
     locationForm.value.customTypeNewGroup = ''
+    locationForm.value.customTypeIcon = ''
+    locationForm.value.customTypeIconUrl = ''
+    locationForm.value.customTypeColor = '#87a9ff'
   }
 
   async function saveLocation() {
     const form = locationForm.value
     if (!form.name.trim()) {
       showStatus('请填写名称')
+      return
+    }
+    if (!form.types.length) {
+      showStatus('请至少选择一个分类')
       return
     }
     const isNewLocation = !editingLocationId.value
@@ -2273,7 +2305,9 @@ export function useMapApp() {
     const addedCategories = clone(form.pendingCustomTypes)
     mapData.value.categories.push(...addedCategories)
     addedCategories.forEach((category) => sessionCreatedCategoryIds.add(category.id))
+    const previous = editingLocationId.value ? locationLookup.value[editingLocationId.value] : null
     const saved = {
+      ...(previous ? clone(previous) : {}),
       id: locationId,
       name: form.name.trim(),
       types: [...form.types],
@@ -2284,6 +2318,17 @@ export function useMapApp() {
       tags: form.tagsText.split(',').map((tag) => tag.trim()).filter(Boolean),
       images: [...form.images],
     }
+    if (form.layerId && getMapLayerById(form.layerId)) saved.layerId = form.layerId
+    const icon = String(form.icon || '').trim()
+    const iconUrl = String(form.iconUrl || '').trim()
+    const color = String(form.color || '').trim()
+    if (icon) saved.icon = icon
+    else delete saved.icon
+    if (iconUrl) saved.iconUrl = iconUrl
+    else delete saved.iconUrl
+    if (color) saved.color = color
+    else delete saved.color
+
     try {
       assertNoReplacementCharacters({ categories: addedCategories, location: saved })
     } catch {

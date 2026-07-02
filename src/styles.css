@@ -1483,22 +1483,6 @@ kbd {
   line-height: 1.8;
 }
 
-.tag-row {
-  display: flex;
-  gap: 6px;
-  margin-bottom: 14px;
-  flex-wrap: wrap;
-}
-
-.tag-row span {
-  padding: 3px 7px;
-  color: #9cd8d0;
-  border: 1px solid rgba(139, 219, 208, 0.18);
-  border-radius: 3px;
-  font-size: 10px;
-  background: rgba(85, 151, 144, 0.12);
-}
-
 .coordinate-row {
   display: flex;
   align-items: center;
@@ -2202,6 +2186,17 @@ kbd {
   gap: 8px;
 }
 
+.form-grid--icon {
+  grid-template-columns: 0.72fr 1.48fr 1fr;
+}
+
+.form-grid--icon input[type='color'],
+.custom-type-row input[type='color'] {
+  min-height: 36px;
+  padding: 4px;
+  cursor: pointer;
+}
+
 .type-picker {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -2386,6 +2381,13 @@ kbd {
 
   .map-hud {
     display: none;
+  }
+
+  .form-grid,
+  .form-grid--icon,
+  .custom-type-row,
+  .type-picker {
+    grid-template-columns: 1fr;
   }
 
 }
