@@ -240,7 +240,10 @@ export function isGamePositionInsideGeofence(position, geofence, coordinateTrans
   const fence = normalizeLayerGeofence(geofence)
   const plane = transformGamePositionToPlane(position, coordinateTransform)
   if (!fence || !plane || !Number.isFinite(plane.z)) return false
-  return plane.z >= fence.zMin && plane.z <= fence.zMax
+  const matchesHeight = fence.zMin === 0 && fence.zMax === 0
+    ? true
+    : plane.z >= fence.zMin && plane.z <= fence.zMax
+  return matchesHeight
     && isPointInsidePolygon({ x: plane.x, y: plane.y }, fence.points)
 }
 

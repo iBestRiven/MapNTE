@@ -449,6 +449,28 @@ export function useMapApp() {
     return mapperForLayer(layer).locatorToLatLng(locator)
   }
 
+  function gamePositionToLayerLatLng(position, layer) {
+    if (!position || !getMapLayerCoordinateMapping(layer)?.calibrated) return null
+    const mapper = mapperForLayer(layer)
+    const locator = mapper.gameToLocator(position)
+    if (!Number.isFinite(locator.pixelX) || !Number.isFinite(locator.pixelY)) return null
+    return mapper.locatorToLatLng({
+      ...locator,
+      sourceWidth: layer.locator.sourceWidth,
+      sourceHeight: layer.locator.sourceHeight,
+    })
+  }
+
+  function getNavigationLatLngForLayer(layer, fallbackPosition = null) {
+    const position = fallbackPosition || getCurrentNavigationState().gamePosition
+    return gamePositionToLayerLatLng(position, layer)
+  }
+
+  function navigationStateToMapLatLng(state = navigationState.value, layer = activeMapLayer.value) {
+    return gamePositionToLayerLatLng(state?.gamePosition, layer)
+      || (state?.position && state.layerId === layer.id ? locatorToMapLatLng(state.position, layer) : null)
+  }
+
   function activeMapLatLngToPoint(latlng) {
     const point = activeMapper.value.locatorToGame(activeMapper.value.latLngToLocator(latlng))
     return {
@@ -543,6 +565,7 @@ export function useMapApp() {
   const collapsedCategoryGroups = ref(initialCollapsedCategoryGroups)
   const navigationConnection = ref('disconnected')
   const navigationState = ref({
+    layerId: null,
     position: null,
     gamePosition: null,
     angle: null,
@@ -1525,7 +1548,8 @@ export function useMapApp() {
   }
 
   function renderNavigationArrow(state = navigationState.value) {
-    if (!map || !state.position) {
+    const latlng = map ? navigationStateToMapLatLng(state) : null
+    if (!map || !latlng) {
       if (navigationMarkerVisible) {
         navigationMarker?.setOpacity(0)
         navigationMarkerVisible = false
@@ -1533,7 +1557,6 @@ export function useMapApp() {
       stopNavigationFollow()
       return
     }
-    const latlng = activeMapper.value.locatorToLatLng(state.position)
     if (!navigationMarker) {
       navigationMarker = L.marker(latlng, {
         icon: createNavigationIcon(),
@@ -1587,6 +1610,7 @@ export function useMapApp() {
     pendingNavigationState = null
     navigationAngleMissing = null
     navigationState.value = {
+      layerId: null,
       position: null,
       gamePosition: null,
       angle: null,
@@ -1643,7 +1667,7 @@ export function useMapApp() {
         : gameZ !== null ? { z: gameZ } : null
       const matchedMapLayer = gamePosition ? findMapLayerByGamePosition(gamePosition) : null
       if (matchedMapLayer && matchedMapLayer.id !== activeMapLayerId.value) {
-        changeMapLayer(matchedMapLayer.id)
+        changeMapLayer(matchedMapLayer.id, { focusGamePosition: gamePosition })
       }
       const targetLayer = matchedMapLayer || activeMapLayer.value
       const targetMapper = mapperForLayer(targetLayer)
@@ -1654,6 +1678,7 @@ export function useMapApp() {
       const pixelX = hasDerivedPixel ? derivedPixel.pixelX : receivedPixelX
       const pixelY = hasDerivedPixel ? derivedPixel.pixelY : receivedPixelY
       scheduleNavigationRender({
+        layerId: targetLayer.id,
         position: pixelX !== null && pixelY !== null
           ? {
               pixelX,
@@ -2075,8 +2100,9 @@ export function useMapApp() {
     useCurrentZ('zMax')
   }
 
-  function changeMapLayer(layerId) {
+  function changeMapLayer(layerId, options = {}) {
     if (!getMapLayerById(layerId) || layerId === activeMapLayerId.value) return
+    const focusGamePosition = options?.focusGamePosition || null
     activeMapLayerId.value = layerId
     localStorage.setItem(ACTIVE_MAP_LAYER_STORAGE_KEY, layerId)
     selectedLocation.value = null
@@ -2088,7 +2114,8 @@ export function useMapApp() {
     syncGeofenceFormFromActiveLayer()
     stopNavigationFollow(false)
     renderMapImageLayer()
-    map?.setView(getLayerBounds().getCenter(), INITIAL_ZOOM, { animate: false })
+    const targetCenter = getNavigationLatLngForLayer(activeMapLayer.value, focusGamePosition) || getLayerBounds().getCenter()
+    map?.setView(targetCenter, INITIAL_ZOOM, { animate: false })
     map?.invalidateSize({ animate: false, pan: false })
     renderMarkers()
     renderRouteArrows()
@@ -2629,6 +2656,7 @@ export function useMapApp() {
     navigationPort,
     navigationRouteSendEnabled,
     navigationState,
+    navigationStateToMapLatLng,
     navigationWebSocketUrl,
     openEditLocation,
     pendingLocationChangeCount,

@@ -3,7 +3,7 @@ import { computed, onBeforeUnmount, ref, watch } from 'vue'
 import L from 'leaflet'
 import { useMapApp } from './composables/useMapApp'
 import { mapPixelToGame } from './data/locations'
-import { INITIAL_ZOOM, MIN_ZOOM } from './constants/mapApp'
+import { INITIAL_ZOOM, MIN_ZOOM, PICTURE_IN_PICTURE_ZOOM_OFFSET } from './constants/mapApp'
 import announcement from './data/announcements.json'
 
 // App.vue 保留页面结构，所有交互状态和业务动作都由组合函数提供。
@@ -83,7 +83,6 @@ const {
   isActiveMapLayerCalibrated,
   isGeofenceConfigured,
   keepTeleportEnabled,
-  locatorToMapLatLng,
   locationChangesImportInput,
   locationForm,
   mapElement,
@@ -96,6 +95,7 @@ const {
   navigationPort,
   navigationRouteSendEnabled,
   navigationState,
+  navigationStateToMapLatLng,
   navigationWebSocketUrl,
   openEditLocation,
   pendingLocationChangeCount,
@@ -206,6 +206,7 @@ let pictureInPictureMap = null
 let pictureInPictureMarkerLayer = null
 let pictureInPictureNavigationMarker = null
 let pictureInPictureViewFrame = 0
+let pictureInPictureCleanupCallbacks = []
 
 const isPictureInPictureOpen = computed(() =>
   Boolean(pictureInPictureWindow.value && !pictureInPictureWindow.value.closed),
@@ -327,19 +328,27 @@ const pictureInPicturePointToLatLng = (point) => {
   return pointToMapLatLng(point)
 }
 
+const getPictureInPictureZoom = (zoom) => {
+  const baseZoom = Number.isFinite(zoom) ? zoom : INITIAL_ZOOM
+  const targetZoom = baseZoom + PICTURE_IN_PICTURE_ZOOM_OFFSET
+  if (!pictureInPictureMap) return targetZoom
+  return Math.min(Math.max(targetZoom, pictureInPictureMap.getMinZoom()), pictureInPictureMap.getMaxZoom())
+}
+
 const getPictureInPictureTargetView = () => {
   const state = navigationState.value
-  if (state.position) {
+  const navigationLatLng = navigationStateToMapLatLng(state)
+  if (navigationLatLng) {
     return {
-      center: locatorToMapLatLng(state.position),
-      zoom: mapView.value?.zoom ?? INITIAL_ZOOM,
+      center: navigationLatLng,
+      zoom: getPictureInPictureZoom(mapView.value?.zoom),
     }
   }
 
   if (mapView.value) {
     return {
       center: [mapView.value.center.lat, mapView.value.center.lng],
-      zoom: mapView.value.zoom,
+      zoom: getPictureInPictureZoom(mapView.value.zoom),
     }
   }
 
@@ -398,13 +407,13 @@ const rebuildPictureInPictureMarkerLayer = () => {
 const renderPictureInPictureNavigation = () => {
   if (!pictureInPictureMap) return
   const state = navigationState.value
-  if (!state.position || activeMapLayerId.value !== 'mainland') {
+  const latlng = navigationStateToMapLatLng(state)
+  if (!latlng) {
     pictureInPictureNavigationMarker?.remove()
     pictureInPictureNavigationMarker = null
     return
   }
 
-  const latlng = locatorToMapLatLng(state.position)
   if (!pictureInPictureNavigationMarker) {
     pictureInPictureNavigationMarker = L.marker(latlng, {
       icon: createPictureInPictureNavigationIcon(),
@@ -453,6 +462,8 @@ const destroyPictureInPictureMap = () => {
     cancelAnimationFrame(pictureInPictureViewFrame)
     pictureInPictureViewFrame = 0
   }
+  pictureInPictureCleanupCallbacks.forEach((cleanup) => cleanup())
+  pictureInPictureCleanupCallbacks = []
   pictureInPictureNavigationMarker?.remove()
   pictureInPictureNavigationMarker = null
   pictureInPictureMarkerLayer = null
@@ -477,6 +488,13 @@ const bindPictureInPictureDragGuard = (mapContainer, pipWindow) => {
   pipWindow.addEventListener('pointerup', stopDrag)
   pipWindow.addEventListener('mouseup', stopDrag)
   pipWindow.addEventListener('blur', stopDrag)
+  return () => {
+    mapContainer.removeEventListener('pointermove', blockHoverMove, true)
+    mapContainer.removeEventListener('mousemove', blockHoverMove, true)
+    pipWindow.removeEventListener('pointerup', stopDrag)
+    pipWindow.removeEventListener('mouseup', stopDrag)
+    pipWindow.removeEventListener('blur', stopDrag)
+  }
 }
 
 const initializePictureInPictureMap = (pipWindow) => {
@@ -490,7 +508,7 @@ const initializePictureInPictureMap = (pipWindow) => {
   status.className = 'pip-map-status'
   mapContainer.append(status)
   doc.body.append(mapContainer)
-  bindPictureInPictureDragGuard(mapContainer, pipWindow)
+  pictureInPictureCleanupCallbacks.push(bindPictureInPictureDragGuard(mapContainer, pipWindow))
 
   const bounds = L.latLngBounds([-layer.height, 0], [0, layer.width])
   pictureInPictureMap = L.map(mapContainer, {
@@ -507,7 +525,7 @@ const initializePictureInPictureMap = (pipWindow) => {
   L.imageOverlay(publicAssetUrl(layer.imageUrl), bounds).addTo(pictureInPictureMap)
   pictureInPictureMarkerLayer = createPictureInPictureMarkerLayer().addTo(pictureInPictureMap)
   if (mapView.value) syncPictureInPictureView()
-  else pictureInPictureMap.setView(bounds.getCenter(), INITIAL_ZOOM)
+  else pictureInPictureMap.setView(bounds.getCenter(), getPictureInPictureZoom(INITIAL_ZOOM))
   syncPictureInPictureMap()
   const refreshSize = () => {
     pictureInPictureMap?.invalidateSize({ animate: false, pan: false })
@@ -515,6 +533,9 @@ const initializePictureInPictureMap = (pipWindow) => {
   }
   requestAnimationFrame(refreshSize)
   pipWindow.addEventListener('resize', refreshSize)
+  pictureInPictureCleanupCallbacks.push(() => {
+    pipWindow.removeEventListener('resize', refreshSize)
+  })
 }
 
 const toggleDocumentPictureInPicture = async () => {
@@ -556,7 +577,15 @@ const toggleDocumentPictureInPicture = async () => {
   }
 }
 
+const rebuildPictureInPictureMap = () => {
+  const pipWindow = pictureInPictureWindow.value
+  if (!pipWindow || pipWindow.closed) return
+  destroyPictureInPictureMap()
+  initializePictureInPictureMap(pipWindow)
+}
+
 watch(mapView, schedulePictureInPictureViewSync, { deep: true })
+watch(activeMapLayerId, rebuildPictureInPictureMap)
 watch([navigationConnectionLabel, navigationConnectionStatus], renderPictureInPictureStatus)
 watch(navigationState, renderPictureInPictureNavigation, { deep: true })
 watch([filteredLocations, completedIds, selectedLocation, activeCategories], renderPictureInPictureMarkers, { deep: true })

@@ -1,6 +1,7 @@
 // 地图视图默认值集中放在这里，避免组件和组合函数里散落魔法数字。
 export const INITIAL_ZOOM = -3
 export const MIN_ZOOM = -3
+export const PICTURE_IN_PICTURE_ZOOM_OFFSET = 1
 
 // localStorage key 统一管理，后续改名或做数据迁移时只需要改一处。
 export const MARKER_FILTERS_STORAGE_KEY = 'nte-marker-filters'
