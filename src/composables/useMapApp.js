@@ -1729,7 +1729,7 @@ export function useMapApp() {
         ? { x: gameX, y: gameY, ...(gameZ !== null ? { z: gameZ } : {}) }
         : gameZ !== null ? { z: gameZ } : null
       const matchedMapLayer = gamePosition ? findMapLayerByGamePosition(gamePosition) : null
-      if (matchedMapLayer && matchedMapLayer.id !== activeMapLayerId.value) {
+      if (centerNavigationEnabled.value && matchedMapLayer && matchedMapLayer.id !== activeMapLayerId.value) {
         changeMapLayer(matchedMapLayer.id, { focusGamePosition: gamePosition })
       }
       const targetLayer = matchedMapLayer || activeMapLayer.value
@@ -2166,6 +2166,7 @@ export function useMapApp() {
   function changeMapLayer(layerId, options = {}) {
     if (!getMapLayerById(layerId) || layerId === activeMapLayerId.value) return
     const focusGamePosition = options?.focusGamePosition || null
+    persistMapView()
     activeMapLayerId.value = layerId
     localStorage.setItem(ACTIVE_MAP_LAYER_STORAGE_KEY, layerId)
     selectedLocation.value = null
@@ -2175,12 +2176,21 @@ export function useMapApp() {
     geofenceCorners.value = []
     replaceTransformForm(activeCoordinateTransform.value)
     syncGeofenceFormFromActiveLayer()
+    map?.stop()
     stopNavigationFollow(false)
-    renderMapImageLayer()
+    map?.setMaxBounds(null)
+    imageLayer?.remove()
+    imageLayer = null
+    markerLayer?.clearLayers()
+    arrowLayer?.clearLayers()
+    calibrationLayer?.clearLayers()
+    geofenceLayer?.clearLayers()
     const focusCenter = focusGamePosition ? getNavigationLatLngForLayer(activeMapLayer.value, focusGamePosition) : null
     if (focusCenter) map?.setView(focusCenter, clampZoomToMap(INITIAL_ZOOM), { animate: false })
-    else if (!restoreMapView()) resetView()
+    else if (!restoreMapView({ allowLegacy: false, updateBounds: false })) resetView({ updateBounds: false })
+    updateMapZoomBounds()
     map?.invalidateSize({ animate: false, pan: false })
+    renderMapImageLayer()
     renderMarkers()
     renderRouteArrows()
     renderCalibrationPoints()
@@ -2189,9 +2199,9 @@ export function useMapApp() {
     updateMapView()
   }
 
-  function resetView() {
+  function resetView(options = {}) {
     if (!map) return
-    updateMapZoomBounds()
+    if (options.updateBounds !== false) updateMapZoomBounds()
     map.setView(getLayerBounds().getCenter(), getDefaultMapZoom(), { animate: false })
   }
 
@@ -2204,16 +2214,16 @@ export function useMapApp() {
     }
   }
 
-  function restoreMapView() {
+  function restoreMapView(options = {}) {
     if (!map) return false
 
-    const storedMapView = readStoredMapView(activeMapLayerId.value)
+    const storedMapView = readStoredMapView(activeMapLayerId.value, options)
     if (!storedMapView) return false
 
     const center = L.latLng(storedMapView.lat, storedMapView.lng)
     if (!getLayerBounds().contains(center)) return false
 
-    updateMapZoomBounds()
+    if (options.updateBounds !== false) updateMapZoomBounds()
     const zoom = clampZoomToMap(storedMapView.zoom)
     map.setView(center, zoom, { animate: false })
     return true

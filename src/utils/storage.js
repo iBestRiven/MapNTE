@@ -33,7 +33,8 @@ function normalizeStoredMapView(mapView) {
 }
 
 // 地图视角和筛选项存放在同一份配置里，这里只负责取出合法的视角字段。
-export function readStoredMapView(layerId = null) {
+export function readStoredMapView(layerId = null, options = {}) {
+  const allowLegacy = options.allowLegacy !== false
   const storedFilters = readStoredMarkerFilters()
   const layerMapView = layerId && storedFilters?.mapViews && typeof storedFilters.mapViews === 'object'
     ? normalizeStoredMapView(storedFilters.mapViews[layerId])
@@ -42,6 +43,7 @@ export function readStoredMapView(layerId = null) {
 
   const mapView = normalizeStoredMapView(storedFilters?.mapView)
   if (!mapView) return null
+  if (layerId && !allowLegacy && !mapView.layerId) return null
   if (layerId && mapView.layerId && mapView.layerId !== layerId) return null
   return mapView
 }
