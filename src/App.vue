@@ -3,7 +3,7 @@ import { computed, onBeforeUnmount, ref, watch } from 'vue'
 import L from 'leaflet'
 import { useMapApp } from './composables/useMapApp'
 import { mapPixelToGame } from './data/locations'
-import { INITIAL_ZOOM, MIN_ZOOM, PICTURE_IN_PICTURE_ZOOM_OFFSET } from './constants/mapApp'
+import { INITIAL_ZOOM, MAP_ZOOM_SNAP, MAX_ZOOM, MIN_ZOOM, PICTURE_IN_PICTURE_ZOOM_OFFSET } from './constants/mapApp'
 import announcement from './data/announcements.json'
 
 // App.vue 保留页面结构，所有交互状态和业务动作都由组合函数提供。
@@ -200,6 +200,13 @@ const announcementItems = computed(() =>
   })),
 )
 
+const sidebarMapLayers = computed(() => {
+  const layerOrder = ['mainland', 'village', 'volcano', 'snow-mountain', 'lake', 'castle']
+  return layerOrder
+    .map((layerId) => mapLayers.find((layer) => layer.id === layerId))
+    .filter(Boolean)
+})
+
 const pictureInPictureWindow = ref(null)
 const pictureInPictureError = ref('')
 let pictureInPictureMap = null
@@ -250,17 +257,6 @@ const injectPictureInPictureStyles = (doc) => {
       width: 100vw;
       height: 100vh;
       background: #000;
-    }
-
-    #pip-map::after {
-      position: absolute;
-      z-index: 400;
-      inset: 0;
-      pointer-events: none;
-      content: '';
-      background:
-        linear-gradient(90deg, rgba(0, 0, 0, 0.3), transparent 22%, transparent 78%, rgba(0, 0, 0, 0.3)),
-        linear-gradient(rgba(0, 0, 0, 0.2), transparent 18%, transparent 82%, rgba(0, 0, 0, 0.22));
     }
 
     .pip-map-status {
@@ -514,8 +510,13 @@ const initializePictureInPictureMap = (pipWindow) => {
   pictureInPictureMap = L.map(mapContainer, {
     crs: L.CRS.Simple,
     minZoom: MIN_ZOOM,
-    maxZoom: 1,
+    maxZoom: MAX_ZOOM,
     maxBounds: bounds.pad(0.18),
+    maxBoundsViscosity: 0.75,
+    inertia: false,
+    bounceAtZoomLimits: false,
+    zoomSnap: MAP_ZOOM_SNAP,
+    zoomDelta: MAP_ZOOM_SNAP,
     zoomControl: false,
     attributionControl: false,
     fadeAnimation: false,
@@ -607,30 +608,10 @@ onBeforeUnmount(() => {
       <div class="brand-block topbar-brand">
         <img class="brand-mark" :src="publicAssetUrl('/logo.png')" alt="MaaNTE" />
         <div class="brand-copy">
-          <p class="eyebrow">MaaNTE Map</p>
+          <p class="eyebrow">MaaNTE 999Nights Map</p>
           <div class="brand-title-row">
-            <h1>MaaNTE在线地图工具</h1>
-            <a class="brand-map-link" href="https://pph.maante.org/" target="_blank" rel="noopener noreferrer">
-              前往粉爪大劫案在线地图
-            </a>
+            <h1>MaaNTE 九百九十九夜在线地图</h1>
           </div>
-        </div>
-      </div>
-      <div class="topbar-layer">
-        <div class="topbar-layer__current">
-          <span>{{ activeMapLayer.name }}</span>
-          <small>{{ activeMapLayer.subtitle }}</small>
-        </div>
-        <div class="topbar-layer__list">
-          <button
-            v-for="layer in mapLayers"
-            :key="layer.id"
-            type="button"
-            :class="{ 'topbar-layer__button--active': layer.id === activeMapLayerId }"
-            @click="changeMapLayer(layer.id)"
-          >
-            {{ layer.name }}
-          </button>
         </div>
       </div>
       <div class="topbar-search">
@@ -690,6 +671,23 @@ onBeforeUnmount(() => {
       </button>
       <div class="sidebar-content">
         <div class="sidebar-categories">
+          <section class="sidebar-layer-picker">
+            <div class="sidebar-layer-picker__heading">
+              <div><p class="eyebrow">MAP REGIONS</p><h2>地图区域</h2></div>
+              <small>{{ activeMapLayer.name }}</small>
+            </div>
+            <div class="sidebar-layer-picker__list">
+              <button
+                v-for="layer in sidebarMapLayers"
+                :key="layer.id"
+                type="button"
+                :class="{ 'sidebar-layer-picker__button--active': layer.id === activeMapLayerId }"
+                @click="changeMapLayer(layer.id)"
+              >
+                {{ layer.name }}
+              </button>
+            </div>
+          </section>
           <div class="sidebar-heading">
             <div><p class="eyebrow">MARKER CATEGORIES</p><h2>标记分类</h2></div>
             <div v-if="groupedCategories.length" class="filter-actions">
@@ -870,7 +868,7 @@ onBeforeUnmount(() => {
               </div>
             </div>
           </div>
-          <div v-if="isLocalEditor" class="sidebar-expander geofence-editor">
+          <div v-if="isLocalEditor && editorMode" class="sidebar-expander geofence-editor">
             <button class="sidebar-expander__toggle" type="button" @click="geofencePanelOpen = !geofencePanelOpen">
               <span>
                 <b>电子围栏</b>

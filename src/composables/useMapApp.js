@@ -19,6 +19,8 @@ import {
   DEFAULT_NAVIGATION_WEBSOCKET_URL,
   FAVORITES_STORAGE_KEY,
   INITIAL_ZOOM,
+  MAP_ZOOM_SNAP,
+  MAX_ZOOM,
   MARKER_FILTERS_STORAGE_KEY,
   MIN_ZOOM,
   NAVIGATION_CENTER_MAX_STEP_PX,
@@ -440,9 +442,37 @@ export function useMapApp() {
     return L.latLngBounds([-layer.height, 0], [0, layer.width])
   }
 
+  function snapZoomToCover(zoom) {
+    if (!Number.isFinite(zoom)) return INITIAL_ZOOM
+    return Math.ceil((zoom - 1e-9) / MAP_ZOOM_SNAP) * MAP_ZOOM_SNAP
+  }
+
+  function getDefaultMapZoom(layer = activeMapLayer.value) {
+    if (!map) return INITIAL_ZOOM
+    const size = map.getSize()
+    if (!size?.x || !size?.y) return INITIAL_ZOOM
+    const coverScale = Math.max(size.x / layer.width, size.y / layer.height)
+    const zoom = snapZoomToCover(Math.log2(coverScale))
+    return Math.min(Math.max(zoom, MIN_ZOOM), MAX_ZOOM)
+  }
+
+  function updateMapZoomBounds() {
+    if (!map) return
+    map.setMinZoom(MIN_ZOOM)
+    map.setMaxBounds(getLayerBounds().pad(0.18))
+  }
+
+  function clampZoomToMap(zoom) {
+    if (!map || !Number.isFinite(zoom)) return getDefaultMapZoom()
+    return Math.min(Math.max(zoom, map.getMinZoom()), map.getMaxZoom())
+  }
+
   function pointToMapLatLng(point) {
     const layer = getMapLayerById(getPointLayerId(point)) || activeMapLayer.value
-    return mapperForLayer(layer).planeToLatLng(point)
+    const mapper = mapperForLayer(layer)
+    return point?.coordinateSource === 'game-location'
+      ? mapper.gameToLatLng(point)
+      : mapper.planeToLatLng(point)
   }
 
   function locatorToMapLatLng(locator, layer = activeMapLayer.value) {
@@ -629,6 +659,7 @@ export function useMapApp() {
   let districtAutoFitReady = false
   let mapViewPersistenceReady = false
   let skipNextDistrictAutoFit = false
+  let userIsDraggingMap = false
   const markerLookup = new Map()
 
   // 统计和筛选派生数据：模板只消费这些计算结果。
@@ -804,13 +835,22 @@ export function useMapApp() {
 
     const center = map.getCenter()
     const storedFilters = readStoredMarkerFilters()
+    const currentMapView = {
+      layerId: activeMapLayerId.value,
+      lat: Number(center.lat.toFixed(6)),
+      lng: Number(center.lng.toFixed(6)),
+      zoom: map.getZoom(),
+    }
+    const storedMapViews = storedFilters?.mapViews && typeof storedFilters.mapViews === 'object'
+      ? storedFilters.mapViews
+      : {}
 
     localStorage.setItem(MARKER_FILTERS_STORAGE_KEY, JSON.stringify({
       ...(storedFilters && typeof storedFilters === 'object' ? storedFilters : {}),
-      mapView: {
-        lat: Number(center.lat.toFixed(6)),
-        lng: Number(center.lng.toFixed(6)),
-        zoom: map.getZoom(),
+      mapView: currentMapView,
+      mapViews: {
+        ...storedMapViews,
+        [activeMapLayerId.value]: currentMapView,
       },
     }))
   }
@@ -1063,7 +1103,7 @@ export function useMapApp() {
       },
     ).addTo(map)
     imageLayer.setZIndex(1)
-    map.setMaxBounds(getLayerBounds().pad(0.18))
+    updateMapZoomBounds()
   }
 
   function rebuildMarkerLayer() {
@@ -1430,6 +1470,7 @@ export function useMapApp() {
   function renderGeofence() {
     if (!geofenceLayer) return
     geofenceLayer.clearLayers()
+    if (!editorMode.value) return
     const points = geofenceMode.value
       ? geofenceCorners.value
       : activeMapLayerGeofence.value?.points || []
@@ -1541,6 +1582,7 @@ export function useMapApp() {
 
   function centerNavigationMarker(latlng) {
     if (!centerNavigationEnabled.value || !map || !latlng) return
+    if (userIsDraggingMap) return
     navigationFollowLatLng = latlng
     if (!navigationFollowFrame) {
       navigationFollowFrame = window.requestAnimationFrame(stepNavigationFollow)
@@ -2114,8 +2156,9 @@ export function useMapApp() {
     syncGeofenceFormFromActiveLayer()
     stopNavigationFollow(false)
     renderMapImageLayer()
-    const targetCenter = getNavigationLatLngForLayer(activeMapLayer.value, focusGamePosition) || getLayerBounds().getCenter()
-    map?.setView(targetCenter, INITIAL_ZOOM, { animate: false })
+    const focusCenter = focusGamePosition ? getNavigationLatLngForLayer(activeMapLayer.value, focusGamePosition) : null
+    if (focusCenter) map?.setView(focusCenter, clampZoomToMap(INITIAL_ZOOM), { animate: false })
+    else if (!restoreMapView()) resetView()
     map?.invalidateSize({ animate: false, pan: false })
     renderMarkers()
     renderRouteArrows()
@@ -2126,7 +2169,9 @@ export function useMapApp() {
   }
 
   function resetView() {
-    map?.setView(getLayerBounds().getCenter(), INITIAL_ZOOM)
+    if (!map) return
+    updateMapZoomBounds()
+    map.setView(getLayerBounds().getCenter(), getDefaultMapZoom(), { animate: false })
   }
 
   function updateMapView() {
@@ -2141,13 +2186,14 @@ export function useMapApp() {
   function restoreMapView() {
     if (!map) return false
 
-    const storedMapView = readStoredMapView()
+    const storedMapView = readStoredMapView(activeMapLayerId.value)
     if (!storedMapView) return false
 
     const center = L.latLng(storedMapView.lat, storedMapView.lng)
-    if (!getLayerBounds().pad(0.18).contains(center)) return false
+    if (!getLayerBounds().contains(center)) return false
 
-    const zoom = Math.min(Math.max(storedMapView.zoom, map.getMinZoom()), map.getMaxZoom())
+    updateMapZoomBounds()
+    const zoom = clampZoomToMap(storedMapView.zoom)
     map.setView(center, zoom, { animate: false })
     return true
   }
@@ -2418,6 +2464,15 @@ export function useMapApp() {
   }
 
   // 组件生命周期：注册地图、快捷键、监听器并在卸载时释放资源。
+  function handleMapResize() {
+    if (!map) return
+    map.invalidateSize({ animate: false, pan: false })
+    updateMapZoomBounds()
+    map.panInsideBounds(getLayerBounds(), { animate: false })
+    persistMapView()
+    updateMapView()
+  }
+
   function handleKeydown(event) {
     if (event.key === '/' && document.activeElement?.tagName !== 'INPUT' && document.activeElement?.tagName !== 'TEXTAREA') {
       event.preventDefault()
@@ -2459,7 +2514,12 @@ export function useMapApp() {
   })
   watch([() => [...activeCategories.value], keepTeleportEnabled, showIncompleteOnly, showFavoritesOnly], persistMarkerFilters)
   watch(editorMode, () => {
-    if (!editorMode.value) showPendingLocationChangesOnly.value = false
+    if (!editorMode.value) {
+      showPendingLocationChangesOnly.value = false
+      geofenceMode.value = false
+      geofenceCorners.value = []
+    }
+    renderGeofence()
   })
   watch(pendingLocationFilterCount, () => {
     if (!pendingLocationFilterCount.value) showPendingLocationChangesOnly.value = false
@@ -2504,8 +2564,14 @@ export function useMapApp() {
     map = L.map(mapElement.value, {
       crs: L.CRS.Simple,
       minZoom: MIN_ZOOM,
-      maxZoom: 1,
+      maxZoom: MAX_ZOOM,
       maxBounds: getLayerBounds().pad(0.18),
+      maxBoundsViscosity: 0.75,
+      inertia: false,
+      bounceAtZoomLimits: false,
+      zoomSnap: MAP_ZOOM_SNAP,
+      zoomDelta: MAP_ZOOM_SNAP,
+      wheelPxPerZoomLevel: 96,
       zoomControl: false,
       attributionControl: false,
     })
@@ -2529,6 +2595,15 @@ export function useMapApp() {
       else if (editorMode.value) openCreateLocation(activeMapLatLngToPoint(latlng))
       renderMarkers()
     })
+    map.on('dragstart', () => {
+      userIsDraggingMap = true
+      stopNavigationFollow(false)
+    })
+    map.on('dragend', () => {
+      userIsDraggingMap = false
+      persistMapView()
+      updateMapView()
+    })
     map.on('moveend zoomend', () => {
       persistMapView()
       updateMapView()
@@ -2543,6 +2618,7 @@ export function useMapApp() {
     persistMapView()
     districtAutoFitReady = true
     if (realtimeNavigationEnabled.value) connectNavigationSocket()
+    window.addEventListener('resize', handleMapResize)
     window.addEventListener('keydown', handleKeydown)
   })
 
@@ -2557,6 +2633,7 @@ export function useMapApp() {
     navigationArrowImage = null
     navigationMarkerVisible = false
     navigationAngleMissing = null
+    window.removeEventListener('resize', handleMapResize)
     window.removeEventListener('keydown', handleKeydown)
     map?.remove()
   })

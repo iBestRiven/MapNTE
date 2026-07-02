@@ -8,7 +8,6975 @@
     "mapLocatorSourceHeight": 11264,
     "coordinateSystem": "game-affine-v1"
   },
-  "categories": [],
-  "locations": [],
+  "categories": [
+    {
+      "id": "treasurebox-normal",
+      "group": "宝箱",
+      "label": "普通宝箱",
+      "iconUrl": "/icons/YH_UI_mapicon_baoxiang_1.png",
+      "color": "#d7a94b",
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-dice",
+      "group": "宝箱",
+      "label": "骰子宝箱",
+      "iconUrl": "/icons/YH_UI_mapicon_baoxiang_2.png",
+      "color": "#8fbbd9",
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "quest",
+      "group": "任务",
+      "label": "任务",
+      "iconUrl": "/icons/sidequest.png",
+      "color": "#7ec7ff",
+      "importTag": "cleaned-map-point-import"
+    }
+  ],
+  "locations": [
+    {
+      "id": "dice-treasurebox-ft-bp-treasure-box-dice-lv3-004-001",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -138462,
+      "y": -156882.27,
+      "z": 10392.036,
+      "coordinateSource": "game-location",
+      "sourceIndex": 0,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TreasureBoxDice_lv3_004_001",
+      "sourceNamePrefix": "FT_BP_TreasureBoxDice_lv3",
+      "tags": [
+        "骰子宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBoxDice_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-treasure-box-dice-lv3-004-002",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -118093.82,
+      "y": -149672.52,
+      "z": 24893.742,
+      "coordinateSource": "game-location",
+      "sourceIndex": 1,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TreasureBoxDice_lv3_004_002",
+      "sourceNamePrefix": "FT_BP_TreasureBoxDice_lv3",
+      "tags": [
+        "骰子宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBoxDice_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-treasure-box-dice-lv3-004-003",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -114964.41,
+      "y": -138966.19,
+      "z": 37078.555,
+      "coordinateSource": "game-location",
+      "sourceIndex": 2,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TreasureBoxDice_lv3_004_003",
+      "sourceNamePrefix": "FT_BP_TreasureBoxDice_lv3",
+      "tags": [
+        "骰子宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBoxDice_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-treasure-box-dice-lv3-004-004",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -146726.72,
+      "y": -153794.95,
+      "z": 8877.634,
+      "coordinateSource": "game-location",
+      "sourceIndex": 3,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TreasureBoxDice_lv3_004_004",
+      "sourceNamePrefix": "FT_BP_TreasureBoxDice_lv3",
+      "tags": [
+        "骰子宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBoxDice_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-treasure-box-dice-lv3-004-005",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -156464.78,
+      "y": -169297.38,
+      "z": 13628.313,
+      "coordinateSource": "game-location",
+      "sourceIndex": 4,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TreasureBoxDice_lv3_004_005",
+      "sourceNamePrefix": "FT_BP_TreasureBoxDice_lv3",
+      "tags": [
+        "骰子宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBoxDice_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-treasure-box-dice-lv3-004-006",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -137538.56,
+      "y": -171028.86,
+      "z": 17414.94,
+      "coordinateSource": "game-location",
+      "sourceIndex": 5,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TreasureBoxDice_lv3_004_006",
+      "sourceNamePrefix": "FT_BP_TreasureBoxDice_lv3",
+      "tags": [
+        "骰子宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBoxDice_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-treasure-box-dice-lv3-004-007",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -132278.44,
+      "y": -173516.3,
+      "z": 24795.719,
+      "coordinateSource": "game-location",
+      "sourceIndex": 6,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TreasureBoxDice_lv3_004_007",
+      "sourceNamePrefix": "FT_BP_TreasureBoxDice_lv3",
+      "tags": [
+        "骰子宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBoxDice_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-004-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -169263.55,
+      "y": -143695.12,
+      "z": 5773.443,
+      "coordinateSource": "game-location",
+      "sourceIndex": 68,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_004_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-004-002",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -175903.94,
+      "y": -142978.44,
+      "z": 6974.322,
+      "coordinateSource": "game-location",
+      "sourceIndex": 69,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_004_002",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-004-003",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -140712.97,
+      "y": -156027.95,
+      "z": 9478.258,
+      "coordinateSource": "game-location",
+      "sourceIndex": 70,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_004_003",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-004-004",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -136826.77,
+      "y": -151228.89,
+      "z": 13600.944,
+      "coordinateSource": "game-location",
+      "sourceIndex": 71,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_004_004",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-004-005",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -147900.27,
+      "y": -156167.9,
+      "z": 9861.966,
+      "coordinateSource": "game-location",
+      "sourceIndex": 72,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_004_005",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-004-006",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -121143.25,
+      "y": -153177.17,
+      "z": 24800.168,
+      "coordinateSource": "game-location",
+      "sourceIndex": 73,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_004_006",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-004-007",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -139651.77,
+      "y": -136978.38,
+      "z": 12970,
+      "coordinateSource": "game-location",
+      "sourceIndex": 74,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_004_007",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-004-008",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -134051.98,
+      "y": -173064.84,
+      "z": 24010,
+      "coordinateSource": "game-location",
+      "sourceIndex": 75,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_004_008",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-004-009",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -112037.79,
+      "y": -135008.39,
+      "z": 59146.996,
+      "coordinateSource": "game-location",
+      "sourceIndex": 76,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_004_009",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-004-010",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -126835.4,
+      "y": -162912.64,
+      "z": 24808.248,
+      "coordinateSource": "game-location",
+      "sourceIndex": 77,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_004_010",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-004-011",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -147388.67,
+      "y": -143085.47,
+      "z": 8873.732,
+      "coordinateSource": "game-location",
+      "sourceIndex": 78,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_004_011",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-004-012",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -146059.73,
+      "y": -143257.28,
+      "z": 10069.496,
+      "coordinateSource": "game-location",
+      "sourceIndex": 79,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_004_012",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-004-013",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -151091.58,
+      "y": -147311.52,
+      "z": 10067.447,
+      "coordinateSource": "game-location",
+      "sourceIndex": 80,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_004_013",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-004-014",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -140771.75,
+      "y": -147759.03,
+      "z": 12996.536,
+      "coordinateSource": "game-location",
+      "sourceIndex": 81,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_004_014",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-004-015",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -157671.55,
+      "y": -168858.47,
+      "z": 13628.313,
+      "coordinateSource": "game-location",
+      "sourceIndex": 82,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_004_015",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-004-016",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -144179.58,
+      "y": -135731.02,
+      "z": 10067.248,
+      "coordinateSource": "game-location",
+      "sourceIndex": 83,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_004_016",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-004-017",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -125707.51,
+      "y": -158394,
+      "z": 24800.168,
+      "coordinateSource": "game-location",
+      "sourceIndex": 84,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_004_017",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-004-018",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -111928.78,
+      "y": -140385.34,
+      "z": 37068.953,
+      "coordinateSource": "game-location",
+      "sourceIndex": 85,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_004_018",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-004-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -164676.62,
+      "y": -142505.77,
+      "z": 7347.948,
+      "coordinateSource": "game-location",
+      "sourceIndex": 134,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_004_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-004-002",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -144916.05,
+      "y": -150552.62,
+      "z": 9669.427,
+      "coordinateSource": "game-location",
+      "sourceIndex": 135,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_004_002",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-004-003",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -150611.17,
+      "y": -149509.66,
+      "z": 8875.621,
+      "coordinateSource": "game-location",
+      "sourceIndex": 136,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_004_003",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-004-004",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -140985.05,
+      "y": -149492.16,
+      "z": 10438.876,
+      "coordinateSource": "game-location",
+      "sourceIndex": 137,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_004_004",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-004-005",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -142925.62,
+      "y": -136485.78,
+      "z": 10060.166,
+      "coordinateSource": "game-location",
+      "sourceIndex": 138,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_004_005",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-004-006",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -136135.98,
+      "y": -170938.42,
+      "z": 17398.268,
+      "coordinateSource": "game-location",
+      "sourceIndex": 139,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_004_006",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-004-007",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -115783.41,
+      "y": -143086.98,
+      "z": 25058.818,
+      "coordinateSource": "game-location",
+      "sourceIndex": 140,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_004_007",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-004-008",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -114552.836,
+      "y": -143630.53,
+      "z": 37124.13,
+      "coordinateSource": "game-location",
+      "sourceIndex": 141,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_004_008",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-004-009",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -114274.52,
+      "y": -136497.64,
+      "z": 37078.555,
+      "coordinateSource": "game-location",
+      "sourceIndex": 142,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_004_009",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-004-010",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -139613.08,
+      "y": -156148.22,
+      "z": 10395.608,
+      "coordinateSource": "game-location",
+      "sourceIndex": 143,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_004_010",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-004-011",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -147884.97,
+      "y": -143060.52,
+      "z": 10069.421,
+      "coordinateSource": "game-location",
+      "sourceIndex": 144,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_004_011",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-004-012",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -147950.69,
+      "y": -171239.64,
+      "z": 13618.313,
+      "coordinateSource": "game-location",
+      "sourceIndex": 145,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_004_012",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-004-013",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -150328.9,
+      "y": -133917.34,
+      "z": 10063.979,
+      "coordinateSource": "game-location",
+      "sourceIndex": 146,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_004_013",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-004-014",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -115740.35,
+      "y": -144512.75,
+      "z": 24916.25,
+      "coordinateSource": "game-location",
+      "sourceIndex": 147,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_004_014",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-004-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -147866.75,
+      "y": -141235.95,
+      "z": 10061.966,
+      "coordinateSource": "game-location",
+      "sourceIndex": 189,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_004_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-004-002",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -136700.34,
+      "y": -157557.83,
+      "z": 13698.509,
+      "coordinateSource": "game-location",
+      "sourceIndex": 190,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_004_002",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-004-003",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -111281.83,
+      "y": -138217.4,
+      "z": 37073.15,
+      "coordinateSource": "game-location",
+      "sourceIndex": 191,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_004_003",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-004-004",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -133453.52,
+      "y": -170411.86,
+      "z": 18012.666,
+      "coordinateSource": "game-location",
+      "sourceIndex": 192,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_004_004",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-004-005",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -155388.08,
+      "y": -140152.7,
+      "z": 8886.408,
+      "coordinateSource": "game-location",
+      "sourceIndex": 193,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_004_005",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-004-006",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -139511.05,
+      "y": -154299.58,
+      "z": 8826.804,
+      "coordinateSource": "game-location",
+      "sourceIndex": 194,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_004_006",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-004-007",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -114043.89,
+      "y": -139558.16,
+      "z": 59158,
+      "coordinateSource": "game-location",
+      "sourceIndex": 195,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_004_007",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-004-008",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -114991.234,
+      "y": -133803.3,
+      "z": 60051.76,
+      "coordinateSource": "game-location",
+      "sourceIndex": 196,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_004_008",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-004-009",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -147467.73,
+      "y": -137008.44,
+      "z": 8876.089,
+      "coordinateSource": "game-location",
+      "sourceIndex": 197,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_004_009",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-004-010",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -113472.19,
+      "y": -146201.86,
+      "z": 37124.227,
+      "coordinateSource": "game-location",
+      "sourceIndex": 198,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_004_010",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-004-011",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -116764.695,
+      "y": -146919.97,
+      "z": 24916.25,
+      "coordinateSource": "game-location",
+      "sourceIndex": 199,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_004_011",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-004-012",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -171496.19,
+      "y": -156568.2,
+      "z": 9836.34,
+      "coordinateSource": "game-location",
+      "sourceIndex": 200,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_004_012",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-004-chess-bishop",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -118671.5,
+      "y": -140197.88,
+      "z": 60051.098,
+      "coordinateSource": "game-location",
+      "sourceIndex": 203,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_004_Chess_Bishop",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3_004_Chess_Bishop",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv3_004_Chess_Bishop"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-004-013",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -113472.19,
+      "y": -146201.86,
+      "z": 37124.227,
+      "coordinateSource": "game-location",
+      "sourceIndex": 210,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_004_013",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-004-014",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -147656.08,
+      "y": -141247.52,
+      "z": 10068.225,
+      "coordinateSource": "game-location",
+      "sourceIndex": 218,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_004_014",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-004-015",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -118350.375,
+      "y": -141482.11,
+      "z": 37118.69,
+      "coordinateSource": "game-location",
+      "sourceIndex": 219,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_004_015",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-999-012",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -146059.73,
+      "y": -143257.28,
+      "z": 10069.496,
+      "coordinateSource": "game-location",
+      "sourceIndex": 220,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_999_012",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-999-009",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -114274.52,
+      "y": -136497.64,
+      "z": 37078.555,
+      "coordinateSource": "game-location",
+      "sourceIndex": 221,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_999_009",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-999-010",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -139613.08,
+      "y": -156148.22,
+      "z": 10395.608,
+      "coordinateSource": "game-location",
+      "sourceIndex": 222,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_999_010",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-999-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -147866.75,
+      "y": -141235.95,
+      "z": 10061.966,
+      "coordinateSource": "game-location",
+      "sourceIndex": 223,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_999_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-999-007",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "赤龙古堡",
+      "layerId": "castle",
+      "areaId": "4N_E",
+      "x": -114043.89,
+      "y": -139558.16,
+      "z": 59158,
+      "coordinateSource": "game-location",
+      "sourceIndex": 224,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_999_007",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_E",
+        "赤龙古堡",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-tresure-box-dice-lv3-003-000",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 149094.48,
+      "y": -140070.62,
+      "z": -717.908,
+      "coordinateSource": "game-location",
+      "sourceIndex": 14,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TresureBoxDice_lv3_003_000",
+      "sourceNamePrefix": "FT_BP_TresureBoxDice_lv3",
+      "tags": [
+        "骰子宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TresureBoxDice_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-tresure-box-dice-lv3-003-001",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 122237.09,
+      "y": -147158.66,
+      "z": 3186.411,
+      "coordinateSource": "game-location",
+      "sourceIndex": 15,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TresureBoxDice_lv3_003_001",
+      "sourceNamePrefix": "FT_BP_TresureBoxDice_lv3",
+      "tags": [
+        "骰子宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TresureBoxDice_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-tresure-box-dice-lv3-003-002",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 171034.61,
+      "y": -127817.22,
+      "z": 6056.159,
+      "coordinateSource": "game-location",
+      "sourceIndex": 16,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TresureBoxDice_lv3_003_002",
+      "sourceNamePrefix": "FT_BP_TresureBoxDice_lv3",
+      "tags": [
+        "骰子宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TresureBoxDice_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-tresure-box-dice-lv3-003-003",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 127193.07,
+      "y": -107220.04,
+      "z": 2722.397,
+      "coordinateSource": "game-location",
+      "sourceIndex": 17,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TresureBoxDice_lv3_003_003",
+      "sourceNamePrefix": "FT_BP_TresureBoxDice_lv3",
+      "tags": [
+        "骰子宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TresureBoxDice_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-tresure-box-dice-lv3-003-004",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 139277.44,
+      "y": -99109.61,
+      "z": 5830.69,
+      "coordinateSource": "game-location",
+      "sourceIndex": 18,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TresureBoxDice_lv3_003_004",
+      "sourceNamePrefix": "FT_BP_TresureBoxDice_lv3",
+      "tags": [
+        "骰子宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TresureBoxDice_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-tresure-box-dice-lv3-003-005",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 123176.805,
+      "y": -93200,
+      "z": 3757.592,
+      "coordinateSource": "game-location",
+      "sourceIndex": 19,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TresureBoxDice_lv3_003_005",
+      "sourceNamePrefix": "FT_BP_TresureBoxDice_lv3",
+      "tags": [
+        "骰子宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TresureBoxDice_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-tresure-box-dice-lv3-003-006",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 147076.67,
+      "y": -121716.68,
+      "z": 4673.082,
+      "coordinateSource": "game-location",
+      "sourceIndex": 20,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TresureBoxDice_lv3_003_006",
+      "sourceNamePrefix": "FT_BP_TresureBoxDice_lv3",
+      "tags": [
+        "骰子宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TresureBoxDice_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 117599.6,
+      "y": -140093.94,
+      "z": 2451.8,
+      "coordinateSource": "game-location",
+      "sourceIndex": 1,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-003-000",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 165320.5,
+      "y": -127736.83,
+      "z": 6482.67,
+      "coordinateSource": "game-location",
+      "sourceIndex": 51,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_003_000",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-003-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 115712.805,
+      "y": -119416.16,
+      "z": 2408.379,
+      "coordinateSource": "game-location",
+      "sourceIndex": 52,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_003_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-003-002",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 156759.73,
+      "y": -134054.44,
+      "z": 1312.745,
+      "coordinateSource": "game-location",
+      "sourceIndex": 53,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_003_002",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-003-003",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 159078.16,
+      "y": -142794.27,
+      "z": -1442.685,
+      "coordinateSource": "game-location",
+      "sourceIndex": 54,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_003_003",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-003-004",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 115093.586,
+      "y": -124569.85,
+      "z": 3380.524,
+      "coordinateSource": "game-location",
+      "sourceIndex": 55,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_003_004",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-003-006",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 127859.836,
+      "y": -137998.72,
+      "z": 2480.767,
+      "coordinateSource": "game-location",
+      "sourceIndex": 56,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_003_006",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-003-007",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 151437.66,
+      "y": -143997.28,
+      "z": -1625.372,
+      "coordinateSource": "game-location",
+      "sourceIndex": 57,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_003_007",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-003-008",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 127880.914,
+      "y": -152293.28,
+      "z": 3185.382,
+      "coordinateSource": "game-location",
+      "sourceIndex": 58,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_003_008",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-003-009",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 152062.52,
+      "y": -124637.51,
+      "z": 4730.223,
+      "coordinateSource": "game-location",
+      "sourceIndex": 59,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_003_009",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-003-010",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 146350.12,
+      "y": -118403.33,
+      "z": 5149.949,
+      "coordinateSource": "game-location",
+      "sourceIndex": 60,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_003_010",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-003-011",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 110007.52,
+      "y": -128539.85,
+      "z": 2687.283,
+      "coordinateSource": "game-location",
+      "sourceIndex": 61,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_003_011",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-003-012",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 174404.89,
+      "y": -125818.97,
+      "z": 18208.05,
+      "coordinateSource": "game-location",
+      "sourceIndex": 62,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_003_012",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-003-014",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 120374.83,
+      "y": -128961.87,
+      "z": 2402.07,
+      "coordinateSource": "game-location",
+      "sourceIndex": 63,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_003_014",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-003-015",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 122644.05,
+      "y": -106222.04,
+      "z": 2411.703,
+      "coordinateSource": "game-location",
+      "sourceIndex": 64,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_003_015",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-003-016",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 134815.19,
+      "y": -97031.52,
+      "z": 4718.793,
+      "coordinateSource": "game-location",
+      "sourceIndex": 65,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_003_016",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-003-017",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 145493.1,
+      "y": -104786.54,
+      "z": 4424.342,
+      "coordinateSource": "game-location",
+      "sourceIndex": 66,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_003_017",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-003-018",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 153008.9,
+      "y": -113403.87,
+      "z": 4140.707,
+      "coordinateSource": "game-location",
+      "sourceIndex": 67,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_003_018",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-003-000",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 147001.16,
+      "y": -127526.234,
+      "z": 3043.552,
+      "coordinateSource": "game-location",
+      "sourceIndex": 121,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_003_000",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-003-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 135085.67,
+      "y": -146924.25,
+      "z": 4636.73,
+      "coordinateSource": "game-location",
+      "sourceIndex": 122,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_003_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-003-002",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 168707.11,
+      "y": -124721.46,
+      "z": 6475,
+      "coordinateSource": "game-location",
+      "sourceIndex": 123,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_003_002",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-003-003",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 129997.1,
+      "y": -146280.92,
+      "z": 5107.719,
+      "coordinateSource": "game-location",
+      "sourceIndex": 124,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_003_003",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-003-004",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 129067.32,
+      "y": -147828.31,
+      "z": 4379.452,
+      "coordinateSource": "game-location",
+      "sourceIndex": 125,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_003_004",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-003-005",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 114019.61,
+      "y": -141738.6,
+      "z": 2217.159,
+      "coordinateSource": "game-location",
+      "sourceIndex": 126,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_003_005",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-003-006",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 123377.88,
+      "y": -134843.94,
+      "z": 2412.217,
+      "coordinateSource": "game-location",
+      "sourceIndex": 127,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_003_006",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-003-007",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 162259.17,
+      "y": -136903.27,
+      "z": 301.889,
+      "coordinateSource": "game-location",
+      "sourceIndex": 128,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_003_007",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-003-008",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 139908.05,
+      "y": -142511.4,
+      "z": 1315.323,
+      "coordinateSource": "game-location",
+      "sourceIndex": 129,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_003_008",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-003-009",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 139184.2,
+      "y": -141260.39,
+      "z": 4243.202,
+      "coordinateSource": "game-location",
+      "sourceIndex": 130,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_003_009",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-003-010",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 121518.13,
+      "y": -93383.7,
+      "z": 3719.269,
+      "coordinateSource": "game-location",
+      "sourceIndex": 131,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_003_010",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-003-011",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 121206.09,
+      "y": -94277.29,
+      "z": 3691.96,
+      "coordinateSource": "game-location",
+      "sourceIndex": 132,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_003_011",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-003-012",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 154257.12,
+      "y": -104867.39,
+      "z": 3994.878,
+      "coordinateSource": "game-location",
+      "sourceIndex": 133,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_003_012",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-003-000",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 111832.27,
+      "y": -128593.98,
+      "z": 3735.507,
+      "coordinateSource": "game-location",
+      "sourceIndex": 181,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_003_000",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-003-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 150213.25,
+      "y": -117019.33,
+      "z": 4456.993,
+      "coordinateSource": "game-location",
+      "sourceIndex": 182,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_003_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-003-002",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 111052.31,
+      "y": -137026.6,
+      "z": 2232.837,
+      "coordinateSource": "game-location",
+      "sourceIndex": 183,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_003_002",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-003-003",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 151285.4,
+      "y": -106574.44,
+      "z": 3932.558,
+      "coordinateSource": "game-location",
+      "sourceIndex": 184,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_003_003",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-003-004",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 121914.32,
+      "y": -93382.13,
+      "z": 3717.6,
+      "coordinateSource": "game-location",
+      "sourceIndex": 185,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_003_004",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-003-005",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 121149.76,
+      "y": -94447.484,
+      "z": 3717.394,
+      "coordinateSource": "game-location",
+      "sourceIndex": 186,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_003_005",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-003-006",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 120880.54,
+      "y": -93547.01,
+      "z": 3991.858,
+      "coordinateSource": "game-location",
+      "sourceIndex": 187,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_003_006",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-003-007",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 171219.16,
+      "y": -128359.836,
+      "z": 18222.535,
+      "coordinateSource": "game-location",
+      "sourceIndex": 188,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_003_007",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-003-013",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "琥珀湖",
+      "layerId": "lake",
+      "areaId": "4N_D",
+      "x": 174404.89,
+      "y": -125818.97,
+      "z": 18208.05,
+      "coordinateSource": "game-location",
+      "sourceIndex": 202,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_003_013",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_D",
+        "琥珀湖",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-005-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "沃伦大陆",
+      "layerId": "mainland",
+      "areaId": "4N_Main",
+      "x": 30.647,
+      "y": 9473.946,
+      "z": 953,
+      "coordinateSource": "game-location",
+      "sourceIndex": 86,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_005_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_Main",
+        "沃伦大陆",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-005-002",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "沃伦大陆",
+      "layerId": "mainland",
+      "areaId": "4N_Main",
+      "x": 2675.043,
+      "y": 2538.038,
+      "z": 1306.106,
+      "coordinateSource": "game-location",
+      "sourceIndex": 87,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_005_002",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_Main",
+        "沃伦大陆",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-005-003",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "沃伦大陆",
+      "layerId": "mainland",
+      "areaId": "4N_Main",
+      "x": -5753.916,
+      "y": 9518.64,
+      "z": 1239.408,
+      "coordinateSource": "game-location",
+      "sourceIndex": 88,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_005_003",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_Main",
+        "沃伦大陆",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-005-004",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "沃伦大陆",
+      "layerId": "mainland",
+      "areaId": "4N_Main",
+      "x": -53.865,
+      "y": -3437.166,
+      "z": 2147.36,
+      "coordinateSource": "game-location",
+      "sourceIndex": 89,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_005_004",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_Main",
+        "沃伦大陆",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-005-005",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "沃伦大陆",
+      "layerId": "mainland",
+      "areaId": "4N_Main",
+      "x": 6630.185,
+      "y": 4024.732,
+      "z": 970.938,
+      "coordinateSource": "game-location",
+      "sourceIndex": 90,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_005_005",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_Main",
+        "沃伦大陆",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-005-006",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "沃伦大陆",
+      "layerId": "mainland",
+      "areaId": "4N_Main",
+      "x": 4295.679,
+      "y": -434.177,
+      "z": 1744.985,
+      "coordinateSource": "game-location",
+      "sourceIndex": 91,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_005_006",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_Main",
+        "沃伦大陆",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-005-007",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "沃伦大陆",
+      "layerId": "mainland",
+      "areaId": "4N_Main",
+      "x": 4144.593,
+      "y": -1948.819,
+      "z": 1946.821,
+      "coordinateSource": "game-location",
+      "sourceIndex": 92,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_005_007",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_Main",
+        "沃伦大陆",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-005-011",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "沃伦大陆",
+      "layerId": "mainland",
+      "areaId": "4N_Main",
+      "x": -7273.205,
+      "y": 4256.773,
+      "z": 1481.416,
+      "coordinateSource": "game-location",
+      "sourceIndex": 93,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_005_011",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_Main",
+        "沃伦大陆",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-005-012",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "沃伦大陆",
+      "layerId": "mainland",
+      "areaId": "4N_Main",
+      "x": 1420.364,
+      "y": 10632.212,
+      "z": 1009.838,
+      "coordinateSource": "game-location",
+      "sourceIndex": 94,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_005_012",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_Main",
+        "沃伦大陆",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-005-013",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "沃伦大陆",
+      "layerId": "mainland",
+      "areaId": "4N_Main",
+      "x": -655.898,
+      "y": 7863.655,
+      "z": 1121.616,
+      "coordinateSource": "game-location",
+      "sourceIndex": 95,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_005_013",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_Main",
+        "沃伦大陆",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-005-014",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "沃伦大陆",
+      "layerId": "mainland",
+      "areaId": "4N_Main",
+      "x": -4493.977,
+      "y": 3319.317,
+      "z": 1300.834,
+      "coordinateSource": "game-location",
+      "sourceIndex": 96,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_005_014",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_Main",
+        "沃伦大陆",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-005-015",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "沃伦大陆",
+      "layerId": "mainland",
+      "areaId": "4N_Main",
+      "x": -4714.088,
+      "y": 3488.851,
+      "z": 1325.49,
+      "coordinateSource": "game-location",
+      "sourceIndex": 97,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_005_015",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_Main",
+        "沃伦大陆",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-005-016",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "沃伦大陆",
+      "layerId": "mainland",
+      "areaId": "4N_Main",
+      "x": -2611.254,
+      "y": 13470.803,
+      "z": 1404.417,
+      "coordinateSource": "game-location",
+      "sourceIndex": 98,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_005_016",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_Main",
+        "沃伦大陆",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-005-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "沃伦大陆",
+      "layerId": "mainland",
+      "areaId": "4N_Main",
+      "x": 2774.479,
+      "y": 5953.365,
+      "z": 953.288,
+      "coordinateSource": "game-location",
+      "sourceIndex": 148,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_005_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_Main",
+        "沃伦大陆",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-005-002",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "沃伦大陆",
+      "layerId": "mainland",
+      "areaId": "4N_Main",
+      "x": -4588.005,
+      "y": 3436.88,
+      "z": 1319.337,
+      "coordinateSource": "game-location",
+      "sourceIndex": 149,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_005_002",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_Main",
+        "沃伦大陆",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-005-003",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "沃伦大陆",
+      "layerId": "mainland",
+      "areaId": "4N_Main",
+      "x": 1086.884,
+      "y": -940.865,
+      "z": 1718.623,
+      "coordinateSource": "game-location",
+      "sourceIndex": 150,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_005_003",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_Main",
+        "沃伦大陆",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-005-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "沃伦大陆",
+      "layerId": "mainland",
+      "areaId": "4N_Main",
+      "x": -7217.715,
+      "y": -445.468,
+      "z": 2259.517,
+      "coordinateSource": "game-location",
+      "sourceIndex": 201,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_005_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_Main",
+        "沃伦大陆",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-tresure-box-dice-lv3-snow-01",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -346731.1,
+      "y": 117145.836,
+      "z": -6268.05,
+      "coordinateSource": "game-location",
+      "sourceIndex": 21,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TresureBoxDice_lv3_Snow_01",
+      "sourceNamePrefix": "FT_BP_TresureBoxDice_lv3_Snow",
+      "tags": [
+        "骰子宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TresureBoxDice_lv3_Snow"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-tresure-box-dice-lv3-snow-02",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -338429.06,
+      "y": 151476.25,
+      "z": 2941.225,
+      "coordinateSource": "game-location",
+      "sourceIndex": 22,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TresureBoxDice_lv3_Snow_02",
+      "sourceNamePrefix": "FT_BP_TresureBoxDice_lv3_Snow",
+      "tags": [
+        "骰子宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TresureBoxDice_lv3_Snow"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-tresure-box-dice-lv3-snow-03",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -333908.75,
+      "y": 156533.73,
+      "z": 8777.716,
+      "coordinateSource": "game-location",
+      "sourceIndex": 23,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TresureBoxDice_lv3_Snow_03",
+      "sourceNamePrefix": "FT_BP_TresureBoxDice_lv3_Snow",
+      "tags": [
+        "骰子宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TresureBoxDice_lv3_Snow"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-tresure-box-dice-lv3-snow-04",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -337085.47,
+      "y": 139397.55,
+      "z": -9294.047,
+      "coordinateSource": "game-location",
+      "sourceIndex": 24,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TresureBoxDice_lv3_Snow_04",
+      "sourceNamePrefix": "FT_BP_TresureBoxDice_lv3_Snow",
+      "tags": [
+        "骰子宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TresureBoxDice_lv3_Snow"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-tresure-box-dice-lv3-snow-05",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -317954.7,
+      "y": 167592.98,
+      "z": 7454.383,
+      "coordinateSource": "game-location",
+      "sourceIndex": 25,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TresureBoxDice_lv3_Snow_05",
+      "sourceNamePrefix": "FT_BP_TresureBoxDice_lv3_Snow",
+      "tags": [
+        "骰子宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TresureBoxDice_lv3_Snow"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-tresure-box-dice-lv3-snow-06",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -336081.06,
+      "y": 148175.11,
+      "z": 2979.595,
+      "coordinateSource": "game-location",
+      "sourceIndex": 26,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TresureBoxDice_lv3_Snow_06",
+      "sourceNamePrefix": "FT_BP_TresureBoxDice_lv3_Snow",
+      "tags": [
+        "骰子宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TresureBoxDice_lv3_Snow"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-tresure-box-dice-lv3-snow-07",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -337857.66,
+      "y": 149718.78,
+      "z": 2110.091,
+      "coordinateSource": "game-location",
+      "sourceIndex": 27,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TresureBoxDice_lv3_Snow_07",
+      "sourceNamePrefix": "FT_BP_TresureBoxDice_lv3_Snow",
+      "tags": [
+        "骰子宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TresureBoxDice_lv3_Snow"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -344743.97,
+      "y": 103338.336,
+      "z": -6237.497,
+      "coordinateSource": "game-location",
+      "sourceIndex": 19,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-004",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -346966.72,
+      "y": 108829.266,
+      "z": -5975.889,
+      "coordinateSource": "game-location",
+      "sourceIndex": 20,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_004",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-005",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -342259.72,
+      "y": 146657.92,
+      "z": 1413.706,
+      "coordinateSource": "game-location",
+      "sourceIndex": 21,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_005",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-008",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -329117.94,
+      "y": 147868.06,
+      "z": 1951.331,
+      "coordinateSource": "game-location",
+      "sourceIndex": 22,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_008",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-010",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -351168.34,
+      "y": 111704.87,
+      "z": -5489.517,
+      "coordinateSource": "game-location",
+      "sourceIndex": 23,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_010",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-011",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -347809.03,
+      "y": 111279.7,
+      "z": -4920.851,
+      "coordinateSource": "game-location",
+      "sourceIndex": 24,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_011",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-012",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -343241.03,
+      "y": 116876.21,
+      "z": -7615.737,
+      "coordinateSource": "game-location",
+      "sourceIndex": 25,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_012",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-013",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -346832.9,
+      "y": 114811.664,
+      "z": -5818.652,
+      "coordinateSource": "game-location",
+      "sourceIndex": 26,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_013",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-014",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -350072.06,
+      "y": 115322.47,
+      "z": -5351.326,
+      "coordinateSource": "game-location",
+      "sourceIndex": 27,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_014",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-015",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -347319.5,
+      "y": 154796.47,
+      "z": 4633.947,
+      "coordinateSource": "game-location",
+      "sourceIndex": 28,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_015",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-018",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -341700.6,
+      "y": 121385.8,
+      "z": -11246.674,
+      "coordinateSource": "game-location",
+      "sourceIndex": 29,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_018",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-019",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -343130.56,
+      "y": 123776.68,
+      "z": -11113.596,
+      "coordinateSource": "game-location",
+      "sourceIndex": 30,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_019",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-020",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -339401.5,
+      "y": 139457.36,
+      "z": -9805.95,
+      "coordinateSource": "game-location",
+      "sourceIndex": 31,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_020",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-023",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -343945.03,
+      "y": 141587.72,
+      "z": -9061.95,
+      "coordinateSource": "game-location",
+      "sourceIndex": 32,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_023",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-024",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -335209.84,
+      "y": 138013.89,
+      "z": -10060.539,
+      "coordinateSource": "game-location",
+      "sourceIndex": 33,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_024",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-025",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -338435.16,
+      "y": 145418.17,
+      "z": 222.705,
+      "coordinateSource": "game-location",
+      "sourceIndex": 34,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_025",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-028",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -342794.72,
+      "y": 146940.44,
+      "z": 2740.98,
+      "coordinateSource": "game-location",
+      "sourceIndex": 35,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_028",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-029",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -335183.53,
+      "y": 149873.92,
+      "z": 2314.801,
+      "coordinateSource": "game-location",
+      "sourceIndex": 36,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_029",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-030",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -339179.3,
+      "y": 152468.06,
+      "z": 1795.613,
+      "coordinateSource": "game-location",
+      "sourceIndex": 37,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_030",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-031",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -336156.06,
+      "y": 156199.69,
+      "z": 4782.439,
+      "coordinateSource": "game-location",
+      "sourceIndex": 38,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_031",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-032",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -344343.6,
+      "y": 156702.5,
+      "z": 7929.178,
+      "coordinateSource": "game-location",
+      "sourceIndex": 39,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_032",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-034",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -321863.94,
+      "y": 162674.8,
+      "z": 7833.648,
+      "coordinateSource": "game-location",
+      "sourceIndex": 40,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_034",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-035",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -318408.34,
+      "y": 165021.31,
+      "z": 6376.38,
+      "coordinateSource": "game-location",
+      "sourceIndex": 41,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_035",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-037",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -338271.84,
+      "y": 143444.64,
+      "z": -9137.489,
+      "coordinateSource": "game-location",
+      "sourceIndex": 42,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_037",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-r2-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -341383.8,
+      "y": 115368.93,
+      "z": -6610.001,
+      "coordinateSource": "game-location",
+      "sourceIndex": 43,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_R2_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1_002_R2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1_002_R2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-r2-002",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -338810.38,
+      "y": 115636.82,
+      "z": -6747.532,
+      "coordinateSource": "game-location",
+      "sourceIndex": 44,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_R2_002",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1_002_R2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1_002_R2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-r2-003",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -341755.56,
+      "y": 118294.33,
+      "z": -6610.081,
+      "coordinateSource": "game-location",
+      "sourceIndex": 45,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_R2_003",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1_002_R2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1_002_R2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-r2-004",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -328189,
+      "y": 166791.25,
+      "z": 2435.772,
+      "coordinateSource": "game-location",
+      "sourceIndex": 46,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_R2_004",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1_002_R2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1_002_R2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-r2-005",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -339388.88,
+      "y": 118446.3,
+      "z": -6610.075,
+      "coordinateSource": "game-location",
+      "sourceIndex": 47,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_R2_005",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1_002_R2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1_002_R2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-r2-006",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -332194.94,
+      "y": 141351.62,
+      "z": -8140.984,
+      "coordinateSource": "game-location",
+      "sourceIndex": 48,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_R2_006",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1_002_R2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1_002_R2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-r2-007",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -332525.75,
+      "y": 134403.2,
+      "z": -6280.465,
+      "coordinateSource": "game-location",
+      "sourceIndex": 49,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_R2_007",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1_002_R2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1_002_R2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-002-r2-008",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -342877.66,
+      "y": 117524.65,
+      "z": -7573.092,
+      "coordinateSource": "game-location",
+      "sourceIndex": 50,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_002_R2_008",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1_002_R2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv1_002_R2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-002-002",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -347979.2,
+      "y": 112998.32,
+      "z": -5518.003,
+      "coordinateSource": "game-location",
+      "sourceIndex": 115,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_002_002",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-002-003",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -341937.75,
+      "y": 128634.1,
+      "z": -10357.001,
+      "coordinateSource": "game-location",
+      "sourceIndex": 116,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_002_003",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-002-004",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -337102,
+      "y": 140719,
+      "z": -9654,
+      "coordinateSource": "game-location",
+      "sourceIndex": 117,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_002_004",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-002-005",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -329455.47,
+      "y": 146284.81,
+      "z": 1184.865,
+      "coordinateSource": "game-location",
+      "sourceIndex": 118,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_002_005",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-002-006",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -351323.53,
+      "y": 107654.14,
+      "z": -5964.559,
+      "coordinateSource": "game-location",
+      "sourceIndex": 119,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_002_006",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-002-007",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -315314.94,
+      "y": 162906.03,
+      "z": 6292.911,
+      "coordinateSource": "game-location",
+      "sourceIndex": 120,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_002_007",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-r2-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -328616.25,
+      "y": 133822.38,
+      "z": -5658.718,
+      "coordinateSource": "game-location",
+      "sourceIndex": 155,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_R2_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2_R2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv2_R2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-r2-002",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -324938.9,
+      "y": 148737.48,
+      "z": 1121.361,
+      "coordinateSource": "game-location",
+      "sourceIndex": 156,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_R2_002",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2_R2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv2_R2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-r2-003",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -326094.97,
+      "y": 155219.02,
+      "z": 4347.548,
+      "coordinateSource": "game-location",
+      "sourceIndex": 157,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_R2_003",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2_R2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv2_R2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-r2-004",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -332428.44,
+      "y": 141777.17,
+      "z": -5947.832,
+      "coordinateSource": "game-location",
+      "sourceIndex": 158,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_R2_004",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2_R2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv2_R2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-r2-006",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -336481.56,
+      "y": 129594.84,
+      "z": -6802.075,
+      "coordinateSource": "game-location",
+      "sourceIndex": 159,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_R2_006",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2_R2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv2_R2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-002-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -345136.8,
+      "y": 116157.16,
+      "z": -8301,
+      "coordinateSource": "game-location",
+      "sourceIndex": 171,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_002_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-002-002",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -341083.1,
+      "y": 133562.81,
+      "z": -10439.742,
+      "coordinateSource": "game-location",
+      "sourceIndex": 172,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_002_002",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-002-003",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -331371.53,
+      "y": 149708.28,
+      "z": 3891,
+      "coordinateSource": "game-location",
+      "sourceIndex": 173,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_002_003",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-002-004",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -307426.56,
+      "y": 176841.1,
+      "z": 10726.18,
+      "coordinateSource": "game-location",
+      "sourceIndex": 174,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_002_004",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-002-005",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -350816.78,
+      "y": 152019.89,
+      "z": 6079.837,
+      "coordinateSource": "game-location",
+      "sourceIndex": 175,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_002_005",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-002-r2-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -325848.84,
+      "y": 145640.56,
+      "z": -4911.549,
+      "coordinateSource": "game-location",
+      "sourceIndex": 176,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_002_R2_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3_002_R2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv3_002_R2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-002-r2-002",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -339243.38,
+      "y": 130042.62,
+      "z": -8139.157,
+      "coordinateSource": "game-location",
+      "sourceIndex": 177,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_002_R2_002",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3_002_R2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv3_002_R2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-002-r2-005",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -331494.88,
+      "y": 163535.67,
+      "z": 3138,
+      "coordinateSource": "game-location",
+      "sourceIndex": 178,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_002_R2_005",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3_002_R2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv3_002_R2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-002-r2-006",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -334064.78,
+      "y": 126265.21,
+      "z": -8147.015,
+      "coordinateSource": "game-location",
+      "sourceIndex": 179,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_002_R2_006",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3_002_R2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv3_002_R2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-002-r2-007",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -298948.8,
+      "y": 183986.69,
+      "z": 11298.955,
+      "coordinateSource": "game-location",
+      "sourceIndex": 180,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_002_R2_007",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3_002_R2",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv3_002_R2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-002-006",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -333504.06,
+      "y": 127959.49,
+      "z": -7300.915,
+      "coordinateSource": "game-location",
+      "sourceIndex": 216,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_002_006",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-002-007",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "牛奶雪冰山",
+      "layerId": "snow-mountain",
+      "areaId": "4N_C",
+      "x": -348211.44,
+      "y": 113193.33,
+      "z": -5497.498,
+      "coordinateSource": "game-location",
+      "sourceIndex": 217,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_002_007",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_C",
+        "牛奶雪冰山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-tresure-box-dice-lv3-village-001",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -33458.36,
+      "y": 130256.266,
+      "z": 4532.153,
+      "coordinateSource": "game-location",
+      "sourceIndex": 28,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TresureBoxDice_lv3_Village_001",
+      "sourceNamePrefix": "FT_BP_TresureBoxDice_lv3_Village",
+      "tags": [
+        "骰子宝箱",
+        "4N_A",
+        "绵绵村",
+        "FT_BP_TresureBoxDice_lv3_Village"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-tresure-box-dice-lv3-village-002",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -26160.77,
+      "y": 137327.83,
+      "z": 5496.404,
+      "coordinateSource": "game-location",
+      "sourceIndex": 29,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TresureBoxDice_lv3_Village_002",
+      "sourceNamePrefix": "FT_BP_TresureBoxDice_lv3_Village",
+      "tags": [
+        "骰子宝箱",
+        "4N_A",
+        "绵绵村",
+        "FT_BP_TresureBoxDice_lv3_Village"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "quest-s120101",
+      "name": "S120101",
+      "types": [
+        "quest"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -33269.566,
+      "y": 135623.86,
+      "z": 4056.181,
+      "coordinateSource": "game-location",
+      "sourceIndex": 0,
+      "sourceTable": "cleaned_quest_fixed_map_icon.json",
+      "sourceName": "S120101",
+      "sourceNamePrefix": "S120101",
+      "tags": [
+        "任务",
+        "4N_A",
+        "绵绵村",
+        "S120101"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "quest-s120151",
+      "name": "S120151",
+      "types": [
+        "quest"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -18395.94,
+      "y": 123342.445,
+      "z": 4237.579,
+      "coordinateSource": "game-location",
+      "sourceIndex": 1,
+      "sourceTable": "cleaned_quest_fixed_map_icon.json",
+      "sourceName": "S120151",
+      "sourceNamePrefix": "S120151",
+      "tags": [
+        "任务",
+        "4N_A",
+        "绵绵村",
+        "S120151"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "quest-s120311",
+      "name": "S120311",
+      "types": [
+        "quest"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -34843.574,
+      "y": 133889.39,
+      "z": 3892.269,
+      "coordinateSource": "game-location",
+      "sourceIndex": 3,
+      "sourceTable": "cleaned_quest_fixed_map_icon.json",
+      "sourceName": "S120311",
+      "sourceNamePrefix": "S120311",
+      "tags": [
+        "任务",
+        "4N_A",
+        "绵绵村",
+        "S120311"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "quest-s120321",
+      "name": "S120321",
+      "types": [
+        "quest"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -32555.682,
+      "y": 126006.28,
+      "z": 3378.502,
+      "coordinateSource": "game-location",
+      "sourceIndex": 4,
+      "sourceTable": "cleaned_quest_fixed_map_icon.json",
+      "sourceName": "S120321",
+      "sourceNamePrefix": "S120321",
+      "tags": [
+        "任务",
+        "4N_A",
+        "绵绵村",
+        "S120321"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "quest-s120001",
+      "name": "s120001",
+      "types": [
+        "quest"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -35451.668,
+      "y": 128453.914,
+      "z": 3195.492,
+      "coordinateSource": "game-location",
+      "sourceIndex": 5,
+      "sourceTable": "cleaned_quest_fixed_map_icon.json",
+      "sourceName": "s120001",
+      "sourceNamePrefix": "s120001",
+      "tags": [
+        "任务",
+        "4N_A",
+        "绵绵村",
+        "s120001"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "quest-s120032",
+      "name": "s120032",
+      "types": [
+        "quest"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -35416.71,
+      "y": 134482.52,
+      "z": 3900.767,
+      "coordinateSource": "game-location",
+      "sourceIndex": 6,
+      "sourceTable": "cleaned_quest_fixed_map_icon.json",
+      "sourceName": "s120032",
+      "sourceNamePrefix": "s120032",
+      "tags": [
+        "任务",
+        "4N_A",
+        "绵绵村",
+        "s120032"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "quest-s120034",
+      "name": "s120034",
+      "types": [
+        "quest"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -36103.945,
+      "y": 136209.97,
+      "z": 3922.518,
+      "coordinateSource": "game-location",
+      "sourceIndex": 7,
+      "sourceTable": "cleaned_quest_fixed_map_icon.json",
+      "sourceName": "s120034",
+      "sourceNamePrefix": "s120034",
+      "tags": [
+        "任务",
+        "4N_A",
+        "绵绵村",
+        "s120034"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "quest-s120036",
+      "name": "s120036",
+      "types": [
+        "quest"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -34847.67,
+      "y": 137481.08,
+      "z": 3917.95,
+      "coordinateSource": "game-location",
+      "sourceIndex": 8,
+      "sourceTable": "cleaned_quest_fixed_map_icon.json",
+      "sourceName": "s120036",
+      "sourceNamePrefix": "s120036",
+      "tags": [
+        "任务",
+        "4N_A",
+        "绵绵村",
+        "s120036"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "quest-s120201",
+      "name": "S120201",
+      "types": [
+        "quest"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -30945.553,
+      "y": 129872.64,
+      "z": 3533.34,
+      "coordinateSource": "game-location",
+      "sourceIndex": 9,
+      "sourceTable": "cleaned_quest_fixed_map_icon.json",
+      "sourceName": "S120201",
+      "sourceNamePrefix": "S120201",
+      "tags": [
+        "任务",
+        "4N_A",
+        "绵绵村",
+        "S120201"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "quest-s120231",
+      "name": "S120231",
+      "types": [
+        "quest"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -30666.818,
+      "y": 127837.695,
+      "z": 3749.993,
+      "coordinateSource": "game-location",
+      "sourceIndex": 10,
+      "sourceTable": "cleaned_quest_fixed_map_icon.json",
+      "sourceName": "S120231",
+      "sourceNamePrefix": "S120231",
+      "tags": [
+        "任务",
+        "4N_A",
+        "绵绵村",
+        "S120231"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "quest-s120241",
+      "name": "S120241",
+      "types": [
+        "quest"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -35086.203,
+      "y": 127399.66,
+      "z": 3311.07,
+      "coordinateSource": "game-location",
+      "sourceIndex": 11,
+      "sourceTable": "cleaned_quest_fixed_map_icon.json",
+      "sourceName": "S120241",
+      "sourceNamePrefix": "S120241",
+      "tags": [
+        "任务",
+        "4N_A",
+        "绵绵村",
+        "S120241"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-006-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -36844.734,
+      "y": 134481.6,
+      "z": 3925,
+      "coordinateSource": "game-location",
+      "sourceIndex": 99,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_006_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_A",
+        "绵绵村",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-006-002",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -31756.06,
+      "y": 125112.055,
+      "z": 3465,
+      "coordinateSource": "game-location",
+      "sourceIndex": 100,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_006_002",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_A",
+        "绵绵村",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-006-003",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -31411.309,
+      "y": 135658.02,
+      "z": 4057,
+      "coordinateSource": "game-location",
+      "sourceIndex": 101,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_006_003",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_A",
+        "绵绵村",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-006-004",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -27189.729,
+      "y": 124740.664,
+      "z": 4355.769,
+      "coordinateSource": "game-location",
+      "sourceIndex": 102,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_006_004",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_A",
+        "绵绵村",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-006-005",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -28383.326,
+      "y": 128507.49,
+      "z": 3685.831,
+      "coordinateSource": "game-location",
+      "sourceIndex": 103,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_006_005",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_A",
+        "绵绵村",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-006-006",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -18184.062,
+      "y": 123760.24,
+      "z": 4238.256,
+      "coordinateSource": "game-location",
+      "sourceIndex": 104,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_006_006",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_A",
+        "绵绵村",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-006-007",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -16599.258,
+      "y": 120405.38,
+      "z": 4582.901,
+      "coordinateSource": "game-location",
+      "sourceIndex": 105,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_006_007",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_A",
+        "绵绵村",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-006-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -12235.438,
+      "y": 130444.086,
+      "z": 4759.153,
+      "coordinateSource": "game-location",
+      "sourceIndex": 151,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_006_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_A",
+        "绵绵村",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-006-002",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -18225.102,
+      "y": 126160.14,
+      "z": 5145.384,
+      "coordinateSource": "game-location",
+      "sourceIndex": 152,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_006_002",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_A",
+        "绵绵村",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-006-003",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -28915.268,
+      "y": 132883.95,
+      "z": 4876.32,
+      "coordinateSource": "game-location",
+      "sourceIndex": 153,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_006_003",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_A",
+        "绵绵村",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-006-004",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "绵绵村",
+      "layerId": "village",
+      "areaId": "4N_A",
+      "x": -32127.582,
+      "y": 132101.6,
+      "z": 3845.305,
+      "coordinateSource": "game-location",
+      "sourceIndex": 154,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_006_004",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_A",
+        "绵绵村",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-treasure-box-dice-lv3-volcano-001",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 107053.52,
+      "y": 158598,
+      "z": -1132.501,
+      "coordinateSource": "game-location",
+      "sourceIndex": 7,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TreasureBoxDice_lv3_Volcano_001",
+      "sourceNamePrefix": "FT_BP_TreasureBoxDice_lv3_Volcano",
+      "tags": [
+        "骰子宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBoxDice_lv3_Volcano"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-treasure-box-dice-lv3-volcano-002",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 101643.22,
+      "y": 134684.5,
+      "z": -17330.752,
+      "coordinateSource": "game-location",
+      "sourceIndex": 8,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TreasureBoxDice_lv3_Volcano_002",
+      "sourceNamePrefix": "FT_BP_TreasureBoxDice_lv3_Volcano",
+      "tags": [
+        "骰子宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBoxDice_lv3_Volcano"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-treasure-box-dice-lv3-volcano-003",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 102477.93,
+      "y": 141424.02,
+      "z": -18478.06,
+      "coordinateSource": "game-location",
+      "sourceIndex": 9,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TreasureBoxDice_lv3_Volcano_003",
+      "sourceNamePrefix": "FT_BP_TreasureBoxDice_lv3_Volcano",
+      "tags": [
+        "骰子宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBoxDice_lv3_Volcano"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-treasure-box-dice-lv3-volcano-004",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 101280.3,
+      "y": 146734.92,
+      "z": -18928.328,
+      "coordinateSource": "game-location",
+      "sourceIndex": 10,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TreasureBoxDice_lv3_Volcano_004",
+      "sourceNamePrefix": "FT_BP_TreasureBoxDice_lv3_Volcano",
+      "tags": [
+        "骰子宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBoxDice_lv3_Volcano"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-treasure-box-dice-lv3-volcano-005",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 90359.3,
+      "y": 147811.03,
+      "z": -19137.426,
+      "coordinateSource": "game-location",
+      "sourceIndex": 11,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TreasureBoxDice_lv3_Volcano_005",
+      "sourceNamePrefix": "FT_BP_TreasureBoxDice_lv3_Volcano",
+      "tags": [
+        "骰子宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBoxDice_lv3_Volcano"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-treasure-box-dice-lv3-volcano-006",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 101831.94,
+      "y": 160043.23,
+      "z": -16956.168,
+      "coordinateSource": "game-location",
+      "sourceIndex": 12,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TreasureBoxDice_lv3_Volcano_006",
+      "sourceNamePrefix": "FT_BP_TreasureBoxDice_lv3_Volcano",
+      "tags": [
+        "骰子宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBoxDice_lv3_Volcano"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "dice-treasurebox-ft-bp-treasure-box-dice-lv3-volcano-007",
+      "name": "骰子宝箱",
+      "types": [
+        "treasurebox-dice"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 101755.49,
+      "y": 160220.95,
+      "z": -16931.166,
+      "coordinateSource": "game-location",
+      "sourceIndex": 13,
+      "sourceTable": "cleaned_dicetreasurebox.json",
+      "sourceName": "FT_BP_TreasureBoxDice_lv3_Volcano_007",
+      "sourceNamePrefix": "FT_BP_TreasureBoxDice_lv3_Volcano",
+      "tags": [
+        "骰子宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBoxDice_lv3_Volcano"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "quest-s120301",
+      "name": "S120301",
+      "types": [
+        "quest"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 110519.125,
+      "y": 118083.43,
+      "z": -13815.334,
+      "coordinateSource": "game-location",
+      "sourceIndex": 2,
+      "sourceTable": "cleaned_quest_fixed_map_icon.json",
+      "sourceName": "S120301",
+      "sourceNamePrefix": "S120301",
+      "tags": [
+        "任务",
+        "4N_B",
+        "巧克力火山",
+        "S120301"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-000",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 106927.48,
+      "y": 119291.52,
+      "z": -13255.558,
+      "coordinateSource": "game-location",
+      "sourceIndex": 0,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_000",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-002",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 100031.62,
+      "y": 127660.74,
+      "z": -15433.17,
+      "coordinateSource": "game-location",
+      "sourceIndex": 2,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_002",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-003",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 101197.58,
+      "y": 117533.266,
+      "z": -12953.524,
+      "coordinateSource": "game-location",
+      "sourceIndex": 3,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_003",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-004",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 106767.58,
+      "y": 123443.266,
+      "z": -13343.879,
+      "coordinateSource": "game-location",
+      "sourceIndex": 4,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_004",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-005",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 111423.086,
+      "y": 119256.27,
+      "z": -13214.938,
+      "coordinateSource": "game-location",
+      "sourceIndex": 5,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_005",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-006",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 115404.805,
+      "y": 125892.17,
+      "z": -11883.764,
+      "coordinateSource": "game-location",
+      "sourceIndex": 6,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_006",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-007",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 112606.83,
+      "y": 128191,
+      "z": -11531.715,
+      "coordinateSource": "game-location",
+      "sourceIndex": 7,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_007",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-008",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 109632.51,
+      "y": 130308.375,
+      "z": -11477.313,
+      "coordinateSource": "game-location",
+      "sourceIndex": 8,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_008",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-009",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 108001.83,
+      "y": 131701,
+      "z": -12757.033,
+      "coordinateSource": "game-location",
+      "sourceIndex": 9,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_009",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-010",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 112392.33,
+      "y": 134965.02,
+      "z": -11875.971,
+      "coordinateSource": "game-location",
+      "sourceIndex": 10,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_010",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-011",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 112592.55,
+      "y": 136382.94,
+      "z": -11421.205,
+      "coordinateSource": "game-location",
+      "sourceIndex": 11,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_011",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-012",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 110289.83,
+      "y": 141739,
+      "z": -12019.825,
+      "coordinateSource": "game-location",
+      "sourceIndex": 12,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_012",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-013",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 108361.83,
+      "y": 136109,
+      "z": -11856.001,
+      "coordinateSource": "game-location",
+      "sourceIndex": 13,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_013",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-014",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 112445.82,
+      "y": 139828.42,
+      "z": -12193.75,
+      "coordinateSource": "game-location",
+      "sourceIndex": 14,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_014",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-015",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 111526.83,
+      "y": 131161,
+      "z": -11451.715,
+      "coordinateSource": "game-location",
+      "sourceIndex": 15,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_015",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-016",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 107549.62,
+      "y": 143196.25,
+      "z": -10493.512,
+      "coordinateSource": "game-location",
+      "sourceIndex": 16,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_016",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-017",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 106248.5,
+      "y": 143600.05,
+      "z": -11920.405,
+      "coordinateSource": "game-location",
+      "sourceIndex": 17,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_017",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-018",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 118229,
+      "y": 127635.59,
+      "z": -11884.202,
+      "coordinateSource": "game-location",
+      "sourceIndex": 18,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_018",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-001-000",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 114670,
+      "y": 140860,
+      "z": -8710,
+      "coordinateSource": "game-location",
+      "sourceIndex": 106,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_001_000",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-001-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 108601.43,
+      "y": 145729.78,
+      "z": -6685,
+      "coordinateSource": "game-location",
+      "sourceIndex": 107,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_001_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-001-002",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 102125.055,
+      "y": 148761.02,
+      "z": 932.902,
+      "coordinateSource": "game-location",
+      "sourceIndex": 108,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_001_002",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-001-003",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 100757.586,
+      "y": 131135.42,
+      "z": -16643.33,
+      "coordinateSource": "game-location",
+      "sourceIndex": 109,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_001_003",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-001-004",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 100759.13,
+      "y": 130959.92,
+      "z": -16640.33,
+      "coordinateSource": "game-location",
+      "sourceIndex": 110,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_001_004",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-001-005",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 101543.19,
+      "y": 132409.2,
+      "z": -16621.33,
+      "coordinateSource": "game-location",
+      "sourceIndex": 111,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_001_005",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-001-006",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 98090.94,
+      "y": 158760,
+      "z": 329.894,
+      "coordinateSource": "game-location",
+      "sourceIndex": 112,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_001_006",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-001-007",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 108169.2,
+      "y": 146578.53,
+      "z": -639.187,
+      "coordinateSource": "game-location",
+      "sourceIndex": 113,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_001_007",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-001-008",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 113017.555,
+      "y": 147527.12,
+      "z": -130.747,
+      "coordinateSource": "game-location",
+      "sourceIndex": 114,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_001_008",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-001-001",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 85287.375,
+      "y": 146856,
+      "z": 2188,
+      "coordinateSource": "game-location",
+      "sourceIndex": 160,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_001_001",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-001-002",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 121760.555,
+      "y": 152726.5,
+      "z": -5355,
+      "coordinateSource": "game-location",
+      "sourceIndex": 161,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_001_002",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-001-003",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 122785.6,
+      "y": 158130.94,
+      "z": -4547.439,
+      "coordinateSource": "game-location",
+      "sourceIndex": 162,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_001_003",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-001-004",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 121050.08,
+      "y": 163418.58,
+      "z": -3431.244,
+      "coordinateSource": "game-location",
+      "sourceIndex": 163,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_001_004",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-001-005",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 98926.086,
+      "y": 156573.67,
+      "z": -1318.743,
+      "coordinateSource": "game-location",
+      "sourceIndex": 164,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_001_005",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-001-006",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 101081.96,
+      "y": 152874.45,
+      "z": 1646.992,
+      "coordinateSource": "game-location",
+      "sourceIndex": 165,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_001_006",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-001-007",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 112650.08,
+      "y": 159588.58,
+      "z": -2399,
+      "coordinateSource": "game-location",
+      "sourceIndex": 166,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_001_007",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-001-008",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 110970.945,
+      "y": 158668.7,
+      "z": 1819.482,
+      "coordinateSource": "game-location",
+      "sourceIndex": 167,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_001_008",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-001-009",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 110871.97,
+      "y": 158818.33,
+      "z": 1819.482,
+      "coordinateSource": "game-location",
+      "sourceIndex": 168,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_001_009",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-001-010",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 114788.48,
+      "y": 146557.12,
+      "z": -174.642,
+      "coordinateSource": "game-location",
+      "sourceIndex": 169,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_001_010",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-001-011",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 98547.96,
+      "y": 160842.02,
+      "z": 330,
+      "coordinateSource": "game-location",
+      "sourceIndex": 170,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_001_011",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-001-009",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 113128.16,
+      "y": 151797.84,
+      "z": -5724,
+      "coordinateSource": "game-location",
+      "sourceIndex": 204,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_001_009",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-001-011",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 116033.664,
+      "y": 150112.78,
+      "z": 914,
+      "coordinateSource": "game-location",
+      "sourceIndex": 205,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_001_011",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-001-012",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 110407.73,
+      "y": 149952.97,
+      "z": -581.123,
+      "coordinateSource": "game-location",
+      "sourceIndex": 206,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_001_012",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-001-013",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 103404.88,
+      "y": 137947.56,
+      "z": -12815.116,
+      "coordinateSource": "game-location",
+      "sourceIndex": 207,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_001_013",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv2-001-014",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 103497.34,
+      "y": 138061.44,
+      "z": -12811.962,
+      "coordinateSource": "game-location",
+      "sourceIndex": 208,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv2_001_014",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv2",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv2"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-001-012",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 103933.64,
+      "y": 136146.34,
+      "z": -12833.116,
+      "coordinateSource": "game-location",
+      "sourceIndex": 209,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_001_012",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-020",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 111032,
+      "y": 158522,
+      "z": 1819,
+      "coordinateSource": "game-location",
+      "sourceIndex": 211,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_020",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-021",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 111003.45,
+      "y": 158814.61,
+      "z": 1819,
+      "coordinateSource": "game-location",
+      "sourceIndex": 212,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_021",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv1-001-022",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 115068.875,
+      "y": 150437.31,
+      "z": 298.63,
+      "coordinateSource": "game-location",
+      "sourceIndex": 213,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv1_001_022",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv1",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv1"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-001-013",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 103955.03,
+      "y": 146339.84,
+      "z": -8687.638,
+      "coordinateSource": "game-location",
+      "sourceIndex": 214,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_001_013",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    },
+    {
+      "id": "treasurebox-ft-bp-treasure-box-lv3-001-014",
+      "name": "普通宝箱",
+      "types": [
+        "treasurebox-normal"
+      ],
+      "district": "巧克力火山",
+      "layerId": "volcano",
+      "areaId": "4N_B",
+      "x": 100576.086,
+      "y": 142033.81,
+      "z": -11888.702,
+      "coordinateSource": "game-location",
+      "sourceIndex": 215,
+      "sourceTable": "cleaned_treasurebox.json",
+      "sourceName": "FT_BP_TreasureBox_lv3_001_014",
+      "sourceNamePrefix": "FT_BP_TreasureBox_lv3",
+      "tags": [
+        "普通宝箱",
+        "4N_B",
+        "巧克力火山",
+        "FT_BP_TreasureBox_lv3"
+      ],
+      "images": [],
+      "importTag": "cleaned-map-point-import"
+    }
+  ],
   "routes": []
 }

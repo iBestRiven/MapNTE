@@ -7,6 +7,8 @@
     "dev": "vite --configLoader runner --host 127.0.0.1",
     "build": "vite build --configLoader runner",
     "build:tiles": "python scripts/build-map-tiles.py --source-dir public/maps",
+    "import:map-points": "node scripts/import-cleaned-map-points.mjs",
+    "import:treasureboxes": "node scripts/import-cleaned-map-points.mjs",
     "preview": "vite preview --configLoader runner --host 127.0.0.1",
     "qa": "node scripts/qa-map.mjs",
     "check:encoding": "node scripts/check-encoding.mjs",

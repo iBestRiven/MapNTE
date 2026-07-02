@@ -1,0 +1,302 @@
+[
+  {
+    "name": "FT_BP_TreasureBoxDice_lv3_004_001",
+    "index": 0,
+    "AreaId": "4N_E",
+    "location": {
+      "X": -138462.0,
+      "Y": -156882.27,
+      "Z": 10392.036
+    }
+  },
+  {
+    "name": "FT_BP_TreasureBoxDice_lv3_004_002",
+    "index": 1,
+    "AreaId": "4N_E",
+    "location": {
+      "X": -118093.82,
+      "Y": -149672.52,
+      "Z": 24893.742
+    }
+  },
+  {
+    "name": "FT_BP_TreasureBoxDice_lv3_004_003",
+    "index": 2,
+    "AreaId": "4N_E",
+    "location": {
+      "X": -114964.41,
+      "Y": -138966.19,
+      "Z": 37078.555
+    }
+  },
+  {
+    "name": "FT_BP_TreasureBoxDice_lv3_004_004",
+    "index": 3,
+    "AreaId": "4N_E",
+    "location": {
+      "X": -146726.72,
+      "Y": -153794.95,
+      "Z": 8877.634
+    }
+  },
+  {
+    "name": "FT_BP_TreasureBoxDice_lv3_004_005",
+    "index": 4,
+    "AreaId": "4N_E",
+    "location": {
+      "X": -156464.78,
+      "Y": -169297.38,
+      "Z": 13628.3125
+    }
+  },
+  {
+    "name": "FT_BP_TreasureBoxDice_lv3_004_006",
+    "index": 5,
+    "AreaId": "4N_E",
+    "location": {
+      "X": -137538.56,
+      "Y": -171028.86,
+      "Z": 17414.94
+    }
+  },
+  {
+    "name": "FT_BP_TreasureBoxDice_lv3_004_007",
+    "index": 6,
+    "AreaId": "4N_E",
+    "location": {
+      "X": -132278.44,
+      "Y": -173516.3,
+      "Z": 24795.719
+    }
+  },
+  {
+    "name": "FT_BP_TreasureBoxDice_lv3_Volcano_001",
+    "index": 7,
+    "AreaId": "4N_B",
+    "location": {
+      "X": 107053.52,
+      "Y": 158598.0,
+      "Z": -1132.501
+    }
+  },
+  {
+    "name": "FT_BP_TreasureBoxDice_lv3_Volcano_002",
+    "index": 8,
+    "AreaId": "4N_B",
+    "location": {
+      "X": 101643.22,
+      "Y": 134684.5,
+      "Z": -17330.752
+    }
+  },
+  {
+    "name": "FT_BP_TreasureBoxDice_lv3_Volcano_003",
+    "index": 9,
+    "AreaId": "4N_B",
+    "location": {
+      "X": 102477.93,
+      "Y": 141424.02,
+      "Z": -18478.06
+    }
+  },
+  {
+    "name": "FT_BP_TreasureBoxDice_lv3_Volcano_004",
+    "index": 10,
+    "AreaId": "4N_B",
+    "location": {
+      "X": 101280.3,
+      "Y": 146734.92,
+      "Z": -18928.328
+    }
+  },
+  {
+    "name": "FT_BP_TreasureBoxDice_lv3_Volcano_005",
+    "index": 11,
+    "AreaId": "4N_B",
+    "location": {
+      "X": 90359.3,
+      "Y": 147811.03,
+      "Z": -19137.426
+    }
+  },
+  {
+    "name": "FT_BP_TreasureBoxDice_lv3_Volcano_006",
+    "index": 12,
+    "AreaId": "4N_B",
+    "location": {
+      "X": 101831.94,
+      "Y": 160043.23,
+      "Z": -16956.168
+    }
+  },
+  {
+    "name": "FT_BP_TreasureBoxDice_lv3_Volcano_007",
+    "index": 13,
+    "AreaId": "4N_B",
+    "location": {
+      "X": 101755.49,
+      "Y": 160220.95,
+      "Z": -16931.166
+    }
+  },
+  {
+    "name": "FT_BP_TresureBoxDice_lv3_003_000",
+    "index": 14,
+    "AreaId": "4N_D",
+    "location": {
+      "X": 149094.48,
+      "Y": -140070.62,
+      "Z": -717.90784
+    }
+  },
+  {
+    "name": "FT_BP_TresureBoxDice_lv3_003_001",
+    "index": 15,
+    "AreaId": "4N_D",
+    "location": {
+      "X": 122237.09,
+      "Y": -147158.66,
+      "Z": 3186.4114
+    }
+  },
+  {
+    "name": "FT_BP_TresureBoxDice_lv3_003_002",
+    "index": 16,
+    "AreaId": "4N_D",
+    "location": {
+      "X": 171034.61,
+      "Y": -127817.22,
+      "Z": 6056.159
+    }
+  },
+  {
+    "name": "FT_BP_TresureBoxDice_lv3_003_003",
+    "index": 17,
+    "AreaId": "4N_D",
+    "location": {
+      "X": 127193.07,
+      "Y": -107220.04,
+      "Z": 2722.397
+    }
+  },
+  {
+    "name": "FT_BP_TresureBoxDice_lv3_003_004",
+    "index": 18,
+    "AreaId": "4N_D",
+    "location": {
+      "X": 139277.44,
+      "Y": -99109.61,
+      "Z": 5830.69
+    }
+  },
+  {
+    "name": "FT_BP_TresureBoxDice_lv3_003_005",
+    "index": 19,
+    "AreaId": "4N_D",
+    "location": {
+      "X": 123176.805,
+      "Y": -93200.0,
+      "Z": 3757.5923
+    }
+  },
+  {
+    "name": "FT_BP_TresureBoxDice_lv3_003_006",
+    "index": 20,
+    "AreaId": "4N_D",
+    "location": {
+      "X": 147076.67,
+      "Y": -121716.68,
+      "Z": 4673.0815
+    }
+  },
+  {
+    "name": "FT_BP_TresureBoxDice_lv3_Snow_01",
+    "index": 21,
+    "AreaId": "4N_C",
+    "location": {
+      "X": -346731.1,
+      "Y": 117145.836,
+      "Z": -6268.0503
+    }
+  },
+  {
+    "name": "FT_BP_TresureBoxDice_lv3_Snow_02",
+    "index": 22,
+    "AreaId": "4N_C",
+    "location": {
+      "X": -338429.06,
+      "Y": 151476.25,
+      "Z": 2941.2246
+    }
+  },
+  {
+    "name": "FT_BP_TresureBoxDice_lv3_Snow_03",
+    "index": 23,
+    "AreaId": "4N_C",
+    "location": {
+      "X": -333908.75,
+      "Y": 156533.73,
+      "Z": 8777.716
+    }
+  },
+  {
+    "name": "FT_BP_TresureBoxDice_lv3_Snow_04",
+    "index": 24,
+    "AreaId": "4N_C",
+    "location": {
+      "X": -337085.47,
+      "Y": 139397.55,
+      "Z": -9294.047
+    }
+  },
+  {
+    "name": "FT_BP_TresureBoxDice_lv3_Snow_05",
+    "index": 25,
+    "AreaId": "4N_C",
+    "location": {
+      "X": -317954.7,
+      "Y": 167592.98,
+      "Z": 7454.3833
+    }
+  },
+  {
+    "name": "FT_BP_TresureBoxDice_lv3_Snow_06",
+    "index": 26,
+    "AreaId": "4N_C",
+    "location": {
+      "X": -336081.06,
+      "Y": 148175.11,
+      "Z": 2979.595
+    }
+  },
+  {
+    "name": "FT_BP_TresureBoxDice_lv3_Snow_07",
+    "index": 27,
+    "AreaId": "4N_C",
+    "location": {
+      "X": -337857.66,
+      "Y": 149718.78,
+      "Z": 2110.0908
+    }
+  },
+  {
+    "name": "FT_BP_TresureBoxDice_lv3_Village_001",
+    "index": 28,
+    "AreaId": "4N_A",
+    "location": {
+      "X": -33458.36,
+      "Y": 130256.266,
+      "Z": 4532.153
+    }
+  },
+  {
+    "name": "FT_BP_TresureBoxDice_lv3_Village_002",
+    "index": 29,
+    "AreaId": "4N_A",
+    "location": {
+      "X": -26160.77,
+      "Y": 137327.83,
+      "Z": 5496.4043
+    }
+  }
+]
