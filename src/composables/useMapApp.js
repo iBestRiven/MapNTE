@@ -32,6 +32,7 @@ import {
 import { clone, publicAssetUrl } from '../utils/assets'
 import { createMapTileLayer } from '../utils/mapTiles'
 import {
+  isWildcardNavigationHost,
   normalizeNavigationHost,
   normalizeNavigationPort,
   normalizeNavigationProtocol,
@@ -612,6 +613,8 @@ export function useMapApp() {
     connecting: 'CONNECTING',
     disconnected: 'OFFLINE',
   })[navigationConnectionStatus.value])
+  const navigationWildcardHostWarning = computed(() => isWildcardNavigationHost(navigationHost.value))
+  const navigationWildcardHostWarningMessage = '那我问你，你为什么要把他改成0.0.0.0？你知道0.0.0.0代表什么吗？不知道的话可以问一下豆包:('
   const navigationWebSocketUrl = computed(() => `${normalizeNavigationProtocol(navigationProtocol.value)}://${normalizeNavigationHost(navigationHost.value)}:${normalizeNavigationPort(navigationPort.value)}`)
   const navigationRouteSendEnabled = computed(() =>
     realtimeNavigationEnabled.value && navigationConnection.value === 'connected',
@@ -1783,6 +1786,11 @@ export function useMapApp() {
 
   function connectNavigationSocket() {
     if (navigationClientStopped || !realtimeNavigationEnabled.value || navigationSocket) return
+    if (navigationWildcardHostWarning.value) {
+      navigationConnection.value = 'disconnected'
+      showStatus(navigationWildcardHostWarningMessage)
+      return
+    }
     navigationConnection.value = 'connecting'
     const socket = new WebSocket(navigationWebSocketUrl.value)
     navigationSocket = socket
@@ -1803,6 +1811,7 @@ export function useMapApp() {
     navigationProtocol.value = normalizeNavigationProtocol(navigationProtocol.value)
     navigationHost.value = normalizeNavigationHost(navigationHost.value)
     navigationPort.value = normalizeNavigationPort(navigationPort.value)
+    if (navigationWildcardHostWarning.value) showStatus(navigationWildcardHostWarningMessage)
     persistMarkerFilters()
     if (realtimeNavigationEnabled.value) {
       disconnectNavigationSocket()
@@ -2589,6 +2598,9 @@ export function useMapApp() {
     if (!centerNavigationEnabled.value) stopNavigationFollow()
     renderNavigationArrow()
   })
+  watch(navigationWildcardHostWarning, (hasWarning) => {
+    if (hasWarning) showStatus(navigationWildcardHostWarningMessage)
+  })
   watch(districtFilterOpen, persistMarkerFilters)
   watch(collapsedCategoryGroups, persistMarkerFilters, { deep: true })
   watch(activeMapLayerId, syncGeofenceFormFromActiveLayer)
@@ -2783,6 +2795,8 @@ export function useMapApp() {
     navigationRouteSendEnabled,
     navigationState,
     navigationStateToMapLatLng,
+    navigationWildcardHostWarning,
+    navigationWildcardHostWarningMessage,
     navigationWebSocketUrl,
     openEditLocation,
     pendingLocationChangeCount,
