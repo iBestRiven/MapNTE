@@ -1,4 +1,4 @@
-# MaaNTE 在线地图工具
+# MapNTE 在线地图工具 基于开源MaaNTE-适配自用游戏的地图攻略
 # 更新本地库 二次修改
 基于 Vue 3、Leaflet 和 Vite 的本地交互式地图。
 
