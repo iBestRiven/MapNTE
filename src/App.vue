@@ -6,6 +6,7 @@ import { mapPixelToGame } from './data/locations'
 import { INITIAL_ZOOM, MAP_ZOOM_SNAP, MAX_ZOOM, MIN_ZOOM, PICTURE_IN_PICTURE_ZOOM_OFFSET } from './constants/mapApp'
 import { createMapTileLayer } from './utils/mapTiles'
 import announcement from './data/announcements.json'
+import { MAINLAND_LAYER_ID} from './data/layers'
 
 // App.vue 保留页面结构，所有交互状态和业务动作都由组合函数提供。
 const {
@@ -203,12 +204,24 @@ const announcementItems = computed(() =>
   })),
 )
 
+//以下注释掉的为选出固定顺序的地图图层，现改为按地图图层在MAP_LAYERS中的顺序显示
+/*
 const sidebarMapLayers = computed(() => {
   const layerOrder = ['mainland', 'village', 'volcano', 'snow-mountain', 'lake', 'castle']
   return layerOrder
     .map((layerId) => mapLayers.find((layer) => layer.id === layerId))
     .filter(Boolean)
 })
+*/
+
+const sidebarMapLayers = computed(() => [
+  ...mapLayers.filter((layer) => layer.id === MAINLAND_LAYER_ID),
+  ...mapLayers.filter((layer) => layer.id !== MAINLAND_LAYER_ID)
+])
+
+const overviewDisplayLayers = computed(() => sidebarMapLayers.value.filter(layer => layer.id === MAINLAND_LAYER_ID)?? [])
+const areaDisplayLayers = computed(() => sidebarMapLayers.value.filter((layer) => layer.id !== MAINLAND_LAYER_ID)?? [])
+//const areaLayerListOpen = ref(localStorage.getItem('pph-area-layer-list-open') === 'true')    
 
 const pictureInPictureWindow = ref(null)
 const pictureInPictureError = ref('')
@@ -611,11 +624,11 @@ onBeforeUnmount(() => {
       <div class="brand-block topbar-brand">
         <img class="brand-mark" :src="publicAssetUrl('/logo.png')" alt="MaaNTE" />
         <div class="brand-copy">
-          <p class="eyebrow">MaaNTE 999Nights Map</p>
+          <p class="eyebrow">MaaNTE 999Nights Map——LocalTest</p>
           <div class="brand-title-row">
             <details class="brand-map-menu">
               <summary>
-                <h1>MaaNTE 九百九十九夜在线地图</h1>
+                <h1>MaaNTE 九百九十九夜在线地图-本地测试版</h1>
                 <span class="brand-map-menu__hint">前往其它地图站</span>
               </summary>
               <div class="brand-map-menu__panel">
@@ -686,8 +699,47 @@ onBeforeUnmount(() => {
           <section class="sidebar-layer-picker">
             <div class="sidebar-layer-picker__heading">
               <div><p class="eyebrow">MAP REGIONS</p><h2>地图区域</h2></div>
-              <small>{{ activeMapLayer.name }}</small>
+              <small style="display:block;text-align:right;">
+                {{ `${sidebarMapLayers.length} 个地图` }}
+                <br>
+                <small>{{ activeMapLayer.name }}</small>
+              </small>
             </div>
+            <div class="layer-list">
+          <button
+            v-for="layer in overviewDisplayLayers"
+            :key="layer.id"
+            type="button"
+            :class="{ active: layer.id === activeMapLayerId.id }"
+            @click="changeLayer(layer.id, { manual: true })"
+          >
+            <span>{{ layer.name }}</span>
+            <small>{{ layer.subtitle }}</small>
+            <i>{{ layer.id === activeMapLayerId.id ? '显示中' : '切换' }}</i>
+          </button>
+          <!-- <div class="layer-group" :class="{ 'layer-group--collapsed': !areaLayerListOpen }">
+            <button class="layer-group-toggle" type="button" @click="toggleAreaLayerList">
+              <span>
+                <b>区域地图</b>
+                <small>{{ areaLayerListOpen ? `${areaDisplayLayers.length} 个区域` : activeLayer.id === OVERVIEW_LAYER_ID ? '默认折叠' : activeLayer.name }}</small>
+              </span>
+              <i>{{ areaLayerListOpen ? '收起' : '展开' }}</i>
+            </button>
+            <div v-show="areaLayerListOpen" class="layer-group-items">
+              <button
+                v-for="layer in areaDisplayLayers"
+                :key="layer.id"
+                type="button"
+                :class="{ active: layer.id === activeLayer.id }"
+                @click="changeLayer(layer.id, { manual: true })"
+              >
+                <span>{{ layer.name }}</span>
+                <small>{{ layer.subtitle }}</small>
+                <i>{{ layer.id === activeLayer.id ? '显示中' : '切换' }}</i>
+              </button>
+            </div>
+          </div> -->
+        </div>
             <div class="sidebar-layer-picker__list">
               <button
                 v-for="layer in sidebarMapLayers"

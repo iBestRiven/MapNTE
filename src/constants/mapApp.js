@@ -28,3 +28,6 @@ export const DEFAULT_COLLAPSED_CATEGORY_GROUPS = {
 
 // 只有这些分类组支持在侧栏中折叠。
 export const COLLAPSIBLE_CATEGORY_GROUP_LABELS = []
+
+// 定义主地图
+export const OVERVIEW_LAYER_ID = 'mainland'

@@ -516,6 +516,67 @@ kbd {
   white-space: nowrap;
 }
 
+.layer-list {
+  display: grid;
+  gap: 7px;
+  margin-top: 16px;
+}
+
+.layer-list button {
+  position: relative;
+  display: grid;
+  width: 100%;
+  gap: 3px;
+  padding: 10px 72px 10px 10px;
+  color: #ededed;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 5px;
+  background: rgba(255,255,255,.05);
+  text-align: left;
+}
+
+.layer-list button.active {
+  border-color: rgba(255,255,255,.34);
+  background: rgba(255,255,255,.11);
+}
+
+.layer-list small,
+.setting-row small,
+.route-panel small {
+  color: #a8a8a8;
+  font-size: 11px;
+}
+
+.layer-list i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  color: #fff;
+  font-size: 10px;
+  font-style: normal;
+  transform: translateY(-50%);
+}
+
+.layer-list .layer-group-toggle {
+  display: flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  color: #d7d7d7;
+  border-color: rgba(255,255,255,.14);
+  background: rgba(0,0,0,.2);
+}
+
+.layer-list .layer-group-toggle i {
+  position: static;
+  flex: 0 0 auto;
+  color: #b8fff2;
+  transform: none;
+}
+
+
+
 .sidebar-layer-picker__list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
